@@ -19,6 +19,7 @@ header {
   border-bottom: 2px solid red;
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 header .navbar .nav-branding,
 header .navbar .nav-menu .nav-item .nav-link {
@@ -66,7 +67,7 @@ header .navbar .hamburger .bar {
   transition: all 0.4s ease-in-out;
   background-color: #121244;
 }
-/* section */
+/* 임시 */
 section>section:nth-child(even) {
   background-color: skyblue;
   height: 600px;
@@ -111,5 +112,183 @@ section>section:nth-child(odd) {
   }
   header .navbar .nav-menu.active{
     right: 0px;
+  }
+}
+
+/** about **/
+.Masthead_Masthead {
+  position: relative;
+}
+
+.Masthead_Masthead:before {
+  /* content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(112, 93, 80, .8) 0, rgba(112, 93, 80, .8) 90%), url(/images/masthead.jpg) 50% no-repeat;
+  background: -o-linear-gradient(top, rgba(112, 93, 80, .8) 0, rgba(112, 93, 80, .8) 90%), url(/images/masthead.jpg) 50% no-repeat;
+  background-size: cover;
+  z-index: -1 */
+}
+
+.Masthead_Masthead .Masthead_content {
+  /* box-sizing: border-box; */
+  /* -webkit-box-sizing: border-box; */
+  width: 100%;
+  max-width: 71.25rem;
+  margin: 0 auto;
+  padding: 7rem 2rem 4rem;
+  text-align: center;
+}
+
+.Masthead_Masthead .Masthead_content .Masthead_title {
+  font-family: Black Han Sans, sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #fff;
+  /* word-break: keep-all */
+}
+
+.Masthead_Masthead .Masthead_content .Masthead_divider {
+  width: 3.25rem;
+  height: 0;
+  margin: 1.5rem auto;
+  border: none;
+  border-top: .2rem solid #f4623a;
+  opacity: 1
+}
+
+.Masthead_Masthead .Masthead_content .Masthead_description {
+  margin: 0 auto 2rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: hsla(0, 0%, 100%, .75);
+  /* line-height: 1.5rem; */
+}
+
+.Masthead_Masthead .Masthead_content .Masthead_find-out-more {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10rem;
+  background-color: #f4623a;
+  /* line-height: 1.5; */
+  cursor: pointer
+}
+.Masthead_Masthead .Masthead_content .Masthead_find-out-more a {
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.Masthead_Masthead .Masthead_content .Masthead_find-out-more:hover {
+  background-color: #f24516;
+  transition: background-color .2s ease-in-out;
+  /* -webkit-transition: background-color .2s ease-in-out; */
+  /* -o-transition: background-color .2s ease-in-out */
+}
+
+@media(max-width:768px) {
+  .Masthead_Masthead .Masthead_content .Masthead_title {
+    font-size: 3rem
+  }
+
+  .Masthead_Masthead .Masthead_content .Masthead_description {
+    font-size: 1rem
+  }
+}
+
+@media(max-width:384px) {
+  .Masthead_Masthead .Masthead_content .Masthead_title {
+    font-size: 2.5rem
+  }
+
+  .Masthead_Masthead .Masthead_content .Masthead_description {
+    font-size: 0.8rem
+  }
+}
+
+/** About **/
+#section-about {
+  background-color: #ffffff;
+  height: auto;
+  margin-bottom: 1em;
+}
+#section-about h1{
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 72px;
+  text-align: center;
+  border-bottom: 2.5px solid gray;
+  /* width: 50%; */
+}
+#section-about .about-total-container {
+  width: 40%;
+  margin: 0 auto;
+}
+#section-about .about-total-container .about-container {
+  padding-top: 1.5em;
+  margin-left: 3em;
+}
+#section-about .about-total-container .about-container .about-icon{
+  padding-right: 0.5em;
+  font-size: 1.5em;
+}
+#section-about .about-total-container .about-container .about-title {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  
+}
+#section-about .about-total-container .about-container .about-content {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 18px;
+  color: #2e2e34;
+}
+
+@media(max-width:988px) {
+  #section-about h1{
+    font-size: 35px;
+  }
+  #section-about .about-total-container .about-container .about-icon{
+    font-size: 1.0em;
+  }
+  #section-about .about-total-container .about-container .about-title {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    
+  }
+  #section-about .about-total-container .about-container .about-content {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 14px;
+    color: #2e2e34;
+  }
+}
+@media(max-width:820px) {
+  #section-about .about-total-container .about-container {
+    padding-top: 1.5em;
+    margin-left: 1em;
+  }
+  #section-about .about-total-container .about-container .about-title {
+    display: none;
+  }
+  
+  #section-about .about-total-container .about-container {
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
+}
+@media(max-width:580px) {
+  #section-about .about-total-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #section-about .about-total-container .about-container {
+    margin-left: 0.5em;
   }
 }
