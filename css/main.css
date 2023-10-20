@@ -1,0 +1,83 @@
+/* 공통 */
+* {
+  color: #000;
+}
+.wrap-center {
+  width: 95%;
+  max-width: 1132px;
+  margin: 0 auto;
+} 
+/* 임시 */
+section {
+  background-color: rgb(166, 166, 255);
+  height: 500px;
+}
+/* 헤더 */
+header{
+padding: 10px 5%;
+height: 30px;
+background-color: orange;
+position: relative;
+
+}
+header .title a{
+font-size:26px;
+}
+    
+header .header-menu {
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translate(0%,-50%);
+}    
+header .header-menu li{
+  display: inline-block;
+}
+    
+header .header-menu li a{
+font-size:16px;
+color:#000;
+margin-left:15px;
+}
+    
+header .menu-toggle-btn{
+display:none ;
+}
+
+/* 태블릿 & 모바일 */
+@media all and (max-width:768px){
+/* header */
+header .header-menu{
+display:none;
+position:absolute;
+top:125px;
+right: 0;
+width: 100%;
+}
+    
+header .header-menu li{
+display: block;
+border-bottom:1px solid #303f9f;
+/* height: 150%; */
+/* height: 30px; */
+background-color:#0783ff;
+/* height: 25px; */
+/* width: 100%; */
+}
+    
+header .header-menu li a{
+font-size:24px;
+color:#fff;
+}
+    
+header .menu-toggle-btn{
+position: absolute;
+right: 5%;
+top: 50%;
+transform: translate(0,-50%);
+cursor:pointer;
+display: block;
+font-size: 20px;
+}    
+}      
