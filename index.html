@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"> -->
-  <link rel="stylesheet" href="./css/reset.css">
+  <!-- <link rel="stylesheet" href="./css/reset.css"> -->
   <link rel="stylesheet" href="./css/main.css">
   <!-- ICON -->
   <script src="https://kit.fontawesome.com/f3455f3758.js" crossorigin="anonymous"></script>
@@ -16,25 +16,43 @@
 <body>
   <header>
     <div class="wrap-center">
-      <span class="title">
-        <a href="">SSH Portfolio</a>
-      </span>
-        <ul class="header-menu">
-          <li><a href="">About</a>
+      <nav class="navbar">
+        <a href="#" class="nav-branding">SSH Portfolio</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#section-about" class="nav-link">About</a>
           </li>
-          <li><a href="">Github & Blog</a></li>
-          <li><a href="">Tech Stacks</a></li>
-          <li><a href="">Project</a></li>
-          <li><a href="">Career</a></li>
-          <li><a href="">Comment</a></li>
+          <li class="nav-item">
+            <a href="#section-github" class="nav-link">Github & Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section-techstacks" class="nav-link">Tech Stacks</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section-project" class="nav-link">Project</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section-career" class="nav-link">Career</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section-comment" class="nav-link">Comment</a>
+          </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </div>
-    <span class="menu-toggle-btn">
-      <i class="fa-solid fa-bars"></i>
-    </span>git remote add origin https://github.com/YoHaiYo/my-first-portfolio.git
-
   </header>
   <section>
+    <section id="section-about"></section>
+    <section id="section-github"></section>
+    <section id="section-techstacks"></section>
+    <section id="section-project"></section>
+    <section id="section-career"></section>
+    <section id="section-comment"></section>
   </section>
 </body>
 </html>
