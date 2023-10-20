@@ -276,3 +276,68 @@ header .navbar .hamburger .bar {
     margin-left: 0.5em;
   }
 }
+
+/** gitblog **/
+#section-gitblog {
+
+}
+#section-gitblog h1{
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 72px;
+  text-align: center;
+}
+#section-gitblog .gitblog-container {
+  display: flex;
+  justify-content: center;
+}
+#section-gitblog .gitblog-container .gitblog-icon img{
+  width: 50px;
+  height: 50px;
+  border-radius: 1em;
+}
+#section-gitblog .gitblog-container .git,
+#section-gitblog .gitblog-container .tistory{
+  margin: 1em 1em;
+  /* padding-bottom: 1em; */
+  width: 300px;
+  height: auto;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#section-gitblog .gitblog-container .git:hover,
+#section-gitblog .gitblog-container .tistory:hover {
+  /* border: 1px solid salmon; */
+  background-color: rgb(225, 250, 255);
+  box-shadow: 5px 5px 10px rgb(0, 46, 61);
+}
+#section-gitblog .gitblog-container .gitblog-title{
+  
+}
+#section-gitblog .gitblog-container .gitblog-content {
+  white-space: pre-line;
+  font-size: 0.8rem;
+  margin: 1em 2em;
+}
+@media(max-width:580px) {
+  #section-gitblog h1{
+    font-size: 35px;
+  }
+  #section-gitblog .gitblog-container {
+    display: block;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+  
+  #section-gitblog .gitblog-container .git,
+  #section-gitblog .gitblog-container .tistory{
+    width: 100%;
+    margin: 0;
+  }
+  #section-gitblog .gitblog-container .gitblog-content {
+    text-align: center;
+  }
+}
