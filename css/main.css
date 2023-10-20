@@ -15,14 +15,14 @@
 
 /* Header */
 header {
-  background-color: #121244;
+  background-color: #fff;
   border-bottom: 2px solid red;
   width: 100%;
   position: fixed;
 }
 header .navbar .nav-branding,
 header .navbar .nav-menu .nav-item .nav-link {
-  color: #fff;
+  color: #121244;
 }
 
 header .navbar {
@@ -64,7 +64,7 @@ header .navbar .hamburger .bar {
   margin: 5px auto;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  background-color: white;
+  background-color: #121244;
 }
 /* section */
 section>section:nth-child(even) {
@@ -99,7 +99,7 @@ section>section:nth-child(odd) {
     right: -100%;
     top: 70px;
     flex-direction: column;
-    background-color: #121244;
+    background-color: #fff;
     width: 50%;    
     border-top: 2px solid red;
     border-bottom: 2px solid red;
