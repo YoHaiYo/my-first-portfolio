@@ -182,42 +182,41 @@ section>section:nth-child(odd) {
   .gitblog-container{
     display: flex;
     justify-content: center;
-    .gitblog-box{
-      margin: 1rem 1rem;
-      /* padding-bottom: 1em; */
-      width: 300px;
-      height: auto;
-      background-color: whitesmoke;
-      border-radius: 10px;
-      cursor: pointer;
-      &:hover{
-        /* border: 1px solid salmon; */
-        background-color: rgb(225, 250, 255);
-        box-shadow: 5px 5px 10px rgb(0, 46, 61);
-      }
-      a{
-        .gitblog-icon{
-          img{
-            width: 50px;
-            height: 50px;
-            border-radius: 1rem;
-            margin: 0.5rem;
-            
+    
+      .gitblog-box{
+        margin: 1rem 1rem;
+        padding-bottom: 1em; 
+        width: 300px;
+        height: auto;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+          /* border: 1px solid salmon; */
+          background-color: rgb(225, 250, 255);
+          box-shadow: 5px 5px 10px rgb(0, 46, 61);
+        }
+          .gitblog-icon{
+            img{
+              width: 50px;
+              height: 50px;
+              border-radius: 1rem;
+              margin: 0.5rem;
+              
+            }
           }
-        }
-        .gitblog-title{
-          font-size: 1.5rem;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          font-weight: bold;
-
-        }
-        .gitblog-content{
-          white-space: pre-line;
-          font-size: 0.8rem;
-          margin: 1rem 2rem;
-
-        }
+          .gitblog-title{
+            font-size: 1.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+  
+          }
+          .gitblog-content{
+            white-space: pre-line;
+            font-size: 0.8rem;
+            margin: 1rem 2rem;
+  
+          }
       }
-    }
   }
 }
