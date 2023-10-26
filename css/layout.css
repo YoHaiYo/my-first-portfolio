@@ -97,16 +97,16 @@ section > section:nth-child(odd) {
 }
 #section-home .home_home .home_content .home_find-out-more {
   display: inline-block;
-  padding: 0.5em;
+  padding: 0.5rem;
   border: none;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   background-color: #f4623a;
   /* line-height: 1.5; */
   cursor: pointer;
 }
 #section-home .home_home .home_content .home_find-out-more a {
   font-weight: 400;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   text-decoration: none;
   color: #fff;
 }
@@ -129,21 +129,21 @@ section > section:nth-child(odd) {
   margin: 0 auto;
 }
 #section-about .about-total-container .about-container {
-  padding-top: 1.5em;
-  margin-left: 3em;
+  padding-top: 1.5rem;
+  margin-left: 3rem;
 }
 #section-about .about-total-container .about-container .about-icon {
-  padding-right: 0.5em;
-  font-size: 1.5em;
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
 }
 #section-about .about-total-container .about-container .about-title {
   font-family: "Black Han Sans", sans-serif;
-  font-size: 19px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 #section-about .about-total-container .about-container .about-content {
   font-family: "Black Han Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1.5rem;
   color: #2e2e34;
 }
 
@@ -153,9 +153,9 @@ section > section:nth-child(odd) {
 }
 #section-gitblog h2 {
   font-family: "Black Han Sans", sans-serif;
-  font-size: 48px;
+  font-size: 2.5rem;
   font-weight: bold;
-  line-height: 72px;
+  line-height: 2;
   text-align: center;
 }
 #section-gitblog .gitblog-container {
