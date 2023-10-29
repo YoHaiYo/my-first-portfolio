@@ -49,9 +49,9 @@ a:hover {color: black; text-decoration: none;}
   }
 }
 #section-wrap {
-  top: 60px; // 헤더의 크기만큼
+  
   #section-home{
-
+    margin-top: 100px; // 고정된 헤더가 가리는 부분만큼
   } //#section-home
   #section-about{  
     .ssh--about-main-wrap {
@@ -157,4 +157,41 @@ a:hover {color: black; text-decoration: none;}
       }
     }
   }
+} //#section-wrap
+footer {
+  // padding: 2rem 0;
+}
+
+/// 팝업(자세히보기)
+.popup-active::before{
+  content: "";
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(72, 72, 72, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;  
+}
+.popup-active #popup {
+  display: block;
+}
+#popup {
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  height: 80%;
+
+  padding: 2rem 2rem;
+
+  border-radius: .5rem;
+
+}
+
+#popup .popup-close {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
 }

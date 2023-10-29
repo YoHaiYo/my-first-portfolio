@@ -52,8 +52,8 @@ a:hover {
   background-color: #121244;
 }
 
-#section-wrap {
-  top: 60px;
+#section-wrap #section-home {
+  margin-top: 100px;
 }
 #section-wrap #section-about .ssh--about-main-wrap {
   width: 25%;
@@ -120,4 +120,35 @@ a:hover {
 }
 #section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-info .ssh--project-summary {
   white-space: pre-line;
+}
+.popup-active::before {
+  content: "";
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(72, 72, 72, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.popup-active #popup {
+  display: block;
+}
+
+#popup {
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
+}
+
+#popup .popup-close {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
 }

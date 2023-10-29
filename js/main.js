@@ -39,3 +39,15 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+/// Popup
+ document.querySelector("#popup .popup-close").addEventListener('click',
+ function(){
+   document.body.classList = ""
+ }
+)
+ document.querySelector(".popup-open").addEventListener('click',
+ function(){
+   document.body.classList += "popup-active"
+ }
+)

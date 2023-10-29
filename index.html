@@ -25,7 +25,8 @@
 
 <body>
   <!-- <header id="hd" class="position-fixed top-0 start-50 translate-middle-x bg-white border-bottom border-primary"> -->
-  <header id="hd"class="container position-fixed top-0 start-0 end-0 mx-auto bg-white border-bottom border-primary border-2 z-3">
+  <header id="hd"
+    class="container position-fixed top-0 start-0 end-0 mx-auto bg-white border-bottom border-primary border-2 z-1">
     <div class="d-flex justify-content-between align-items-center">
       <h1><a href="">로고</a></h1>
       <nav class="navbar">
@@ -47,7 +48,7 @@
       </nav>
     </div>
   </header>
-  <section id="section-wrap" class="position-relative container">
+  <section id="section-wrap" class="container border-bottom border-primary border-2">
     <section id="section-home" class="border-bottom border-primary border-2">
       <div class="text-center m-3">
         <p>
@@ -64,10 +65,10 @@
           강점에 대한 근거소개
         </p>
         <button type="button" class="btn btn-primary ">
-            <div class="d-flex">
-              <p class="m-0">바로가기</p>
-              <i class="m-0">@</i>
-            </div>
+          <div class="d-flex">
+            <p class="m-0">바로가기</p>
+            <i class="m-0">@</i>
+          </div>
         </button>
       </div>
     </section>
@@ -175,7 +176,7 @@
         <h2 class="text-center">Project</h2>
         <hr class="ssh--divider__main">
         <div class="ssh--project-main-wrap">
-          <div class="ssh--project-title text-center mb-3">프로젝트 1 타이틀</div>          
+          <div class="ssh--project-title text-center mb-3">프로젝트 1 타이틀</div>
           <div class="ssh--project-wrap d-flex justify-content-around">
             <div class="ssh--project-slide">
               <!-- SWIPER -->
@@ -200,14 +201,14 @@
             <div class="ssh--project-info">
               <div class="ssh--project-summary">
                 프로젝트에 대한 요약내용
-                Lorem ipsum dolor sit amet, 
-                consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
                 Ut iure perferendis non sunt adipisci animi amet,
                 dolor aspernatur facilis porro deserunt quam aliquam!
                 Animi ex pariatur ullam ut suscipit nobis!
               </div>
               <div class="text-center mt-3">
-                <button type="button" class="btn btn-primary">자세히보기
+                <button type="button" class="popup-open btn btn-primary">자세히보기
                   <i>@</i>
                 </button>
                 <button type="button" class="btn btn-outline-primary">배포URL
@@ -236,19 +237,31 @@
                 </li>
                 <li>
                   <i>@</i>
-                  <span>사용된기술 :</span>
+                  <span>사용기술 :</span>
                   <span>HTML, CSS, JS, React, Bootrap ...</span>
                 </li>
               </ul>
-            </div>
+            </div>            
           </div>
-        </div>
-        <hr class="ssh--divider__main">
+
+          <div id="popup" class="position-fixed z-3 bg-white border border-black">
+            <p>팝업내용</p>
+            <button class="popup-close bg-transparent border-0">X</button>
+          </div>
+          
+        </div> <!-- ssh--project-main-wrap -->        
       </div>
-      </div>
+    </div>
+    </section>
+    <section id="comment">
+      <div class="text-center h3">section comment</div>
     </section>
   </section> <!-- section-wrap -->
-
+  <footer class="bg-secondary-subtle text-center">
+    <div class="pt-3 pb-2">
+      <p class="text-muted">Copyright 2023. SimSeHoon. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 
 </html>
