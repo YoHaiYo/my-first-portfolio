@@ -125,7 +125,7 @@ a:hover {
   height: 300px;
 }
 
-#popup {
+.popup {
   display: none;
   top: 50%;
   left: 50%;
@@ -147,11 +147,11 @@ a:hover {
   left: 0;
 }
 
-.popup-active #popup {
+.popup-active .popup {
   display: block;
 }
 
-#popup .popup-close {
+.popup .popup-close {
   position: absolute;
   right: 1rem;
   top: 0.5rem;

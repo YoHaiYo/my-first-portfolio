@@ -166,7 +166,7 @@ footer {
 }
 
 /// 팝업(자세히보기)
-#popup {
+.popup {
   display: none;
   top: 50%;
   left: 50%;
@@ -187,11 +187,11 @@ footer {
   right: 0;
   left: 0;  
 }
-.popup-active #popup {
+.popup-active .popup {
   display: block;
 }
 
-#popup .popup-close {
+.popup .popup-close {
   position: absolute;
   right: 1rem;
   top: 0.5rem;
