@@ -13,6 +13,8 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="./css/style.min.css">
+  <!-- ICON -->
+
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -45,7 +47,7 @@
       <div class="text-center m-3">
         <p>
           프론트엔드 개발자 <br>
-          OOO
+          김OO
         </p>
         <hr class="ssh--divider__sub">
         <p>
@@ -56,11 +58,11 @@
         <p>
           강점에 대한 근거소개
         </p>
-        <button type="button" class="btn btn-outline-primary">
-          <a href="" class="d-flex">
-            <p class="m-0">바로가기</p>
-            <i class="m-0">@</i>
-          </a>
+        <button type="button" class="btn btn-primary ">
+            <div class="d-flex">
+              <p class="m-0">바로가기</p>
+              <i class="m-0">@</i>
+            </div>
         </button>
       </div>
     </section>
@@ -168,27 +170,40 @@
         <h2 class="text-center">Project</h2>
         <hr class="ssh--divider__main">
         <div class="ssh--project-main-wrap">
-          <div class="ssh--project-title text-center">프로젝트 1 타이틀</div>
+          <div class="ssh--project-title text-center mb-3">프로젝트 1 타이틀</div>          
           <div class="ssh--project-wrap d-flex justify-content-around">
             <div class="ssh--project-slide">
               <!-- SWIPER -->
               <div class="swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">
+                    <img src="./image/project-preview-1-1.png" alt="프로젝트미리보기">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./image/project-preview-1-2.png" alt="프로젝트미리보기">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./image/project-preview-1-2.png" alt="프로젝트미리보기">
+                  </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev">button-prev</div>
-                <div class="swiper-button-next">button-next</div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
               <!-- /SWIPER -->
             </div>
-            <div class="ssh--project-info bg-danger">
+            <div class="ssh--project-info">
               <div class="ssh--project-summary">
                 프로젝트에 대한 요약내용
+                Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. 
+                Ut iure perferendis non sunt adipisci animi amet,
+                dolor aspernatur facilis porro deserunt quam aliquam!
+                Animi ex pariatur ullam ut suscipit nobis!
               </div>
-              <button>자세히보기</button>
+              <div class="text-center mt-3">
+                <button type="button" class="btn btn-primary">자세히보기</button>
+              </div>
               <hr>
               <ul class="ssh--project-detail">
                 <li>

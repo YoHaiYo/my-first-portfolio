@@ -97,7 +97,17 @@ nav #gnb .ssh--gnbList > a {
   font-weight: bold;
 }
 #section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-slide .swiper {
-  width: 300px;
-  height: 300px;
-  background: orange;
+  width: 25rem;
+  height: 22rem;
+  border: 1px solid #333;
+}
+#section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-slide .swiper .swiper-wrapper .swiper-slide > img {
+  width: 100%;
+  height: 100%;
+}
+#section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-info {
+  width: 25rem;
+}
+#section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-info .ssh--project-summary {
+  white-space: pre-line;
 }
