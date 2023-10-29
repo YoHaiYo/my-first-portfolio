@@ -68,14 +68,14 @@ a:hover {color: black; text-decoration: none;}
         }
       }} 
   } //#section-about
-  #gitblog {
+  #section-gitblog {
     .ssh--gitblog-wrap{
       width: 25%;
       background-color: wheat;
       border-radius: 0.75rem;
     }
-  } //#gitblog
-  #techstacks {
+  } //#section-gitblog
+  #section-techstacks {
    .ssh--techstacks-main-wrap {
     .ssh--techstacks-wrap{
       position: relative;
@@ -119,8 +119,8 @@ a:hover {color: black; text-decoration: none;}
       }
     }
    } 
-  } //#techstacks
-  #project{
+  } //#section-techstacks
+  #section-project{
     .ssh--project-main-wrap{
       .ssh--project-title{
         font-size: 1.5rem;
@@ -157,12 +157,26 @@ a:hover {color: black; text-decoration: none;}
       }
     }
   }
+  #section-comment{
+    height: 300px;
+  }
 } //#section-wrap
 footer {
   // padding: 2rem 0;
 }
 
 /// 팝업(자세히보기)
+#popup {
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  height: 80%;
+
+  padding: 2rem 2rem;
+  border-radius: .5rem;
+}
 .popup-active::before{
   content: "";
   position: fixed;
@@ -175,19 +189,6 @@ footer {
 }
 .popup-active #popup {
   display: block;
-}
-#popup {
-  display: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 80%;
-  height: 80%;
-
-  padding: 2rem 2rem;
-
-  border-radius: .5rem;
-
 }
 
 #popup .popup-close {

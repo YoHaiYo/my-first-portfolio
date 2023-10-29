@@ -58,69 +58,84 @@ a:hover {
 #section-wrap #section-about .ssh--about-main-wrap {
   width: 25%;
 }
-#section-wrap #gitblog .ssh--gitblog-wrap {
+#section-wrap #section-gitblog .ssh--gitblog-wrap {
   width: 25%;
   background-color: wheat;
   border-radius: 0.75rem;
 }
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap {
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap {
   position: relative;
 }
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh-techstacks-proficiency,
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh--techstacks-name {
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh-techstacks-proficiency,
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh--techstacks-name {
   opacity: 1;
   transition: 0.3s;
   transform: translate(-50%, 0%);
 }
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh--techstacks-icon {
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh--techstacks-icon {
   background-color: #0062ff;
 }
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh--techstacks-icon > img {
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh--techstacks-icon > img {
   opacity: 0.25;
   transition: 0.3s;
 }
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh--techstacks-icon {
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh--techstacks-icon {
   opacity: 1;
   margin: 0.5rem;
 }
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh--techstacks-icon > img {
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh--techstacks-icon > img {
   width: 6rem;
   height: auto;
 }
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh--techstacks-name,
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh-techstacks-proficiency {
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh--techstacks-name,
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh-techstacks-proficiency {
   opacity: 0;
   position: absolute;
   left: 50%;
   color: #fff;
 }
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh--techstacks-name {
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh--techstacks-name {
   top: 30%;
   transform: translate(-50%, -50%);
 }
-#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh-techstacks-proficiency {
+#section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh-techstacks-proficiency {
   top: 50%;
   transform: translate(-50%, 50%);
 }
-#section-wrap #project .ssh--project-main-wrap .ssh--project-title {
+#section-wrap #section-project .ssh--project-main-wrap .ssh--project-title {
   font-size: 1.5rem;
   font-weight: bold;
 }
-#section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-slide .swiper {
+#section-wrap #section-project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-slide .swiper {
   width: 25rem;
   height: 22rem;
   border: 1px solid #333;
 }
-#section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-slide .swiper .swiper-wrapper .swiper-slide > img {
+#section-wrap #section-project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-slide .swiper .swiper-wrapper .swiper-slide > img {
   width: 100%;
   height: 100%;
 }
-#section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-info {
+#section-wrap #section-project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-info {
   width: 25rem;
 }
-#section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-info .ssh--project-summary {
+#section-wrap #section-project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-info .ssh--project-summary {
   white-space: pre-line;
 }
+#section-wrap #section-comment {
+  height: 300px;
+}
+
+#popup {
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
+}
+
 .popup-active::before {
   content: "";
   position: fixed;
@@ -134,17 +149,6 @@ a:hover {
 
 .popup-active #popup {
   display: block;
-}
-
-#popup {
-  display: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  padding: 2rem 2rem;
-  border-radius: 0.5rem;
 }
 
 #popup .popup-close {
