@@ -35,15 +35,6 @@ a:hover {
   opacity: 1;
 }
 
-.ssh--divider__transparent {
-  width: 1rem;
-  height: 0;
-  margin: 1.5rem auto;
-  border: none;
-  border-top: 0.2rem solid transparent;
-  opacity: 1;
-}
-
 nav #gnb {
   white-space: nowrap;
 }
@@ -56,4 +47,41 @@ nav #gnb .ssh--gnbList > a {
 }
 #section-wrap #section-about .ssh--about-main-wrap {
   width: 25%;
+}
+#section-wrap #gitblog .ssh--gitblog-wrap {
+  width: 25%;
+  background-color: wheat;
+  border-radius: 0.75rem;
+}
+#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap {
+  position: relative;
+}
+#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh-techstacks-proficiency,
+#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh--techstacks-name {
+  display: block;
+}
+#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh--techstacks-icon {
+  background-color: #0062ff;
+}
+#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap:hover .ssh--techstacks-icon > img {
+  opacity: 0.25;
+}
+#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh--techstacks-icon {
+  opacity: 1;
+}
+#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh--techstacks-name {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+#section-wrap #techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap .ssh-techstacks-proficiency {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
 }

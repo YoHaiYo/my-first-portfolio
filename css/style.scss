@@ -22,14 +22,6 @@ a:hover {color: black; text-decoration: none;}
   border-top: .2rem solid #f4623a;
   opacity: 1;
 }
-.ssh--divider__transparent {
-  width: 1rem;
-  height: 0;
-  margin: 1.5rem auto;
-  border: none;
-  border-top: .2rem solid transparent;
-  opacity: 1;
-}
 
 // MAIN
 nav {
@@ -63,5 +55,51 @@ nav {
   
         }
       }} 
+  }
+  #gitblog {
+    .ssh--gitblog-wrap{
+      width: 25%;
+      background-color: wheat;
+      border-radius: 0.75rem;
+    }
+  }
+  #techstacks {
+   .ssh--techstacks-main-wrap {
+    .ssh--techstacks-wrap{
+      position: relative;
+      &:hover {     
+        .ssh-techstacks-proficiency,
+        .ssh--techstacks-name{
+          display: block;
+        }
+        .ssh--techstacks-icon{
+          background-color: #0062ff;
+          >img{
+            opacity: 0.25; 
+          }
+        }          
+      }
+      .ssh--techstacks-icon{
+        opacity: 1;   
+
+      }
+      .ssh--techstacks-name{
+        display: none;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+      }
+      .ssh-techstacks-proficiency{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+      }
+    }
+   } 
   }
 }
