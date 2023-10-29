@@ -40,7 +40,7 @@ nav {
   top: 60px; // 헤더의 크기만큼
   #section-home{
 
-  }
+  } //#section-home
   #section-about{  
     .ssh--about-main-wrap {
       width: 25%; // 반응형 작업할때 조절하기
@@ -55,14 +55,14 @@ nav {
   
         }
       }} 
-  }
+  } //#section-about
   #gitblog {
     .ssh--gitblog-wrap{
       width: 25%;
       background-color: wheat;
       border-radius: 0.75rem;
     }
-  }
+  } //#gitblog
   #techstacks {
    .ssh--techstacks-main-wrap {
     .ssh--techstacks-wrap{
@@ -107,5 +107,27 @@ nav {
       }
     }
    } 
+  } //#techstacks
+  #project{
+    .ssh--project-main-wrap{
+      .ssh--project-title{
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .ssh--project-wrap{
+        .ssh--project-slide{
+          background-color: #f4623a;
+          width: 20rem;
+          >img{
+            width: 100%;
+            height: auto;
+          }
+        }
+        .ssh--project-info{
+          .ssh--project-summary{}
+          .ssh--project-detail{}
+        }
+      }
+    }
   }
 }

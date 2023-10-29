@@ -92,3 +92,15 @@ nav #gnb .ssh--gnbList > a {
   top: 50%;
   transform: translate(-50%, 50%);
 }
+#section-wrap #project .ssh--project-main-wrap .ssh--project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-slide {
+  background-color: #f4623a;
+  width: 20rem;
+}
+#section-wrap #project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-slide > img {
+  width: 100%;
+  height: auto;
+}
