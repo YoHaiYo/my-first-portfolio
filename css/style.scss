@@ -1,0 +1,67 @@
+// 리셋
+* {margin: 0;padding: 0;}
+li {list-style: none;}
+a {color: black; text-decoration: none;}
+a:hover {color: black; text-decoration: none;}
+
+// 공통
+// .wrap {max-width: 1280px; margin: 0 auto;}
+.ssh--divider__main {
+  width: 23.25rem;
+  height: 0;
+  margin: 1.0rem auto;
+  border: none;
+  border-top: .2rem solid #0062ff;
+  opacity: 1;
+}
+.ssh--divider__sub {
+  width: 3.25rem;
+  height: 0;
+  margin: 1.0rem auto;
+  border: none;
+  border-top: .2rem solid #f4623a;
+  opacity: 1;
+}
+.ssh--divider__transparent {
+  width: 1rem;
+  height: 0;
+  margin: 1.5rem auto;
+  border: none;
+  border-top: .2rem solid transparent;
+  opacity: 1;
+}
+
+// MAIN
+nav {
+  #gnb {
+    white-space: nowrap;
+    .ssh--gnbList { 
+      >a {      
+      padding-left: 1rem;
+      // border: 1px solid red;
+      }
+    }
+  }
+}
+
+#section-wrap {
+  top: 60px; // 헤더의 크기만큼
+  #section-home{
+
+  }
+  #section-about{  
+    .ssh--about-main-wrap {
+      width: 25%; // 반응형 작업할때 조절하기
+      .ssh--about-wrap{
+        .ssh--about-icon{
+  
+        }
+        .ssh--about-name{
+  
+        }
+        .ssh--about-content{
+  
+        }
+      }} 
+  }
+}
