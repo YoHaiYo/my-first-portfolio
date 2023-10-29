@@ -1,45 +1,46 @@
 
+
 @media(max-width:800px) {
-  #hd .navbar {
-    /* position: relative; */
+  .navba{
+    /* width: 500px; */
+    /* background-color: red; */
   }
 
-  #hd .navbar .hamburger {
+  .navbar .hamburger {
     display: block;
   }
 
-  #hd .navbar .hamburger.active .bar:nth-child(2) {
+  .navbar .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
 
-  #hd .navbar .hamburger.active .bar:nth-child(1) {
+  .navbar .hamburger.active .bar:nth-child(1) {
     width: 30px;
     transform: translateY(8px) rotate(-45deg);
   }
 
-  #hd .navbar .hamburger.active .bar:nth-child(3) {
+  .navbar .hamburger.active .bar:nth-child(3) {
     width: 30px;
     transform: translateY(-8px) rotate(45deg);
   }
 
-  #hd .navbar .nav-menu {
+  .navbar .ssh--nav-menu {
     position: absolute;
-    right: -100%;
-    top: 70px;
-    flex-direction: column;
-    background-color: #fff;
-    width: 50%;
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
-    text-align: center;
+    right: -25rem;
+    top: 70px;    
+    flex-direction: column;    
+    width: 12.5rem;
     transition: 0.5s;
   }
 
-  #hd .navbar .nav-menu .nav-item {
-    margin: 16px 0;
+  .navbar .ssh--nav-menu.active {
+    right: 0;    
   }
-
-  #hd .navbar .nav-menu.active {
-    right: 0px;
+  .navbar .ssh--nav-menu.active .ssh--gnbList{
+    /* background-color: aqua; */
+    background-color: white;
+    border-bottom: 1px solid darkblue;
+    height: 3rem;
+    padding-top: .5rem;
   }
 }

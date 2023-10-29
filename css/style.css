@@ -35,11 +35,21 @@ a:hover {
   opacity: 1;
 }
 
-nav #gnb {
-  white-space: nowrap;
-}
-nav #gnb .ssh--gnbList > a {
+.navbar #gnb .ssh--gnbList > a {
   padding-left: 1rem;
+}
+.navbar .hamburger {
+  display: none;
+  cursor: pointer;
+}
+.navbar .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-color: #121244;
 }
 
 #section-wrap {

@@ -23,19 +23,31 @@ a:hover {color: black; text-decoration: none;}
   opacity: 1;
 }
 
+
 // MAIN
-nav {
+.navbar {
   #gnb {
-    white-space: nowrap;
+    // white-space: nowrap;
     .ssh--gnbList { 
       >a {      
       padding-left: 1rem;
-      // border: 1px solid red;
       }
     }
   }
+  .hamburger{
+    display: none;
+    cursor: pointer;
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      background-color: #121244;
+    }
+  }
 }
-
 #section-wrap {
   top: 60px; // 헤더의 크기만큼
   #section-home{
