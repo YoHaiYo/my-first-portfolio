@@ -58,6 +58,9 @@ a:hover {
 #section-wrap #section-about .ssh--about-main-wrap {
   width: 25%;
 }
+#section-wrap #section-about .ssh--about-main-wrap .ssh--about-wrap {
+  margin-bottom: 1rem;
+}
 #section-wrap #section-gitblog .ssh--gitblog-wrap {
   width: 25%;
   background-color: wheat;
@@ -174,4 +177,22 @@ body:before {
   right: 2.5%;
   border: 0;
   background-color: transparent;
+}
+
+#to-top {
+  box-shadow: rgba(58, 58, 58, 0.281) 3px 3px 10px;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  color: #0D62FD;
+  border: 2px solid #0D62FD;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9;
 }

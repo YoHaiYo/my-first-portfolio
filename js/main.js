@@ -56,3 +56,32 @@ $(document).ready(function() {
     $(".modal-box").removeClass("showdiv");
   })
 })
+
+/// gsap 패키지
+const toTopEl = document.querySelector('#to-top');
+
+/// lodash 패키지
+// _.throttle(함수, 시간) : 0.3초마다 실행되게 해주기. 이거 안하면 스크롤할때마다 수백번씩 실행됨.
+window.addEventListener('scroll', _.throttle(function() {
+  console.log(window.scrollY);
+  if (window.scrollY > 500) {
+    // gsap.to(요소, 지속시간(s), 옵션);
+    // 버튼 보이기
+    gsap.to(toTopEl, .3, {
+      x: 0
+    });
+  } else {
+    // 버튼 숨기기
+    gsap.to(toTopEl, .3, {
+      x: 100
+    });
+  } 
+}, 300));
+
+/// ScrollToPlugin 패키지
+// to-top 누르면 최상단으로 이동.
+toTopEl.addEventListener('click', function () {
+  gsap.to(window, .1, {
+    scrollTo: 0
+  });
+});
