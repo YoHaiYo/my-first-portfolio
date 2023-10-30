@@ -35,8 +35,16 @@ a:hover {
   opacity: 1;
 }
 
+i {
+  font-size: 0.85rem;
+}
+
 .navbar #gnb .ssh--gnbList > a {
   padding-left: 1rem;
+  transition: 0.3s;
+}
+.navbar #gnb .ssh--gnbList > a:hover {
+  color: #0ca2ff;
 }
 .navbar .hamburger {
   display: none;
@@ -56,15 +64,16 @@ a:hover {
   margin-top: 100px;
 }
 #section-wrap #section-about .ssh--about-main-wrap {
-  width: 25%;
+  width: 30%;
 }
 #section-wrap #section-about .ssh--about-main-wrap .ssh--about-wrap {
   margin-bottom: 1rem;
 }
 #section-wrap #section-gitblog .ssh--gitblog-wrap {
   width: 25%;
-  background-color: wheat;
   border-radius: 0.75rem;
+  background-color: white;
+  box-shadow: rgba(149, 160, 165, 0.494) 0px 8px 15px;
 }
 #section-wrap #section-techstacks .ssh--techstacks-main-wrap .ssh--techstacks-wrap {
   position: relative;

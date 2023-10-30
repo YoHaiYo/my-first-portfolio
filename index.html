@@ -10,11 +10,13 @@
   <!-- BOOTSTRAP -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="stylesheet" href="./css/responsive.css">
-  <!-- ICON -->
 
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -37,13 +39,13 @@
       <h1><a href="">로고</a></h1>
       <nav class="navbar">
         <ul id="gnb" class="ssh--nav-menu d-flex mt-3">
-          <li class="ssh--gnbList"><a href="">Home</a></li>
-          <li class="ssh--gnbList"><a href="">About
+          <li class="ssh--gnbList"><a href="#">Home</a></li>
+          <li class="ssh--gnbList"><a href="#section-about">About
             </a></li>
-          <li class="ssh--gnbList"><a href="">Github & Blog</a></li>
-          <li class="ssh--gnbList"><a href="">Tech Stacks</a></li>
-          <li class="ssh--gnbList"><a href="">Project</a></li>
-          <li class="ssh--gnbList"><a href="">Contact</a></li>
+          <li class="ssh--gnbList"><a href="#section-gitblog">Github & Blog</a></li>
+          <li class="ssh--gnbList"><a href="#section-techstacks">Tech Stacks</a></li>
+          <li class="ssh--gnbList"><a href="#section-project">Project</a></li>
+          <li class="ssh--gnbList"><a href="#section-contact">Contact</a></li>
           <!-- <li class="ssh--gnbList"><a href="">Comment</a></li> -->
         </ul>
         <div class="hamburger">
@@ -73,7 +75,7 @@
         <button type="button" class="btn btn-primary ">
           <div class="d-flex">
             <p class="m-0">바로가기</p>
-            <i class="m-0">@</i>
+            <i class="bi bi-box-arrow-up-right"></i>
           </div>
         </button>
       </div>
@@ -84,27 +86,27 @@
         <!-- <div class="position-absolute start-50 translate-middle-x"> -->
         <div class="ssh--about-main-wrap start-0 end-0 mx-auto">
           <div class="ssh--about-wrap">
-            <i class="ssh--about-icon">@</i>
+            <i class="bi bi-person-circle"></i>
             <span class="ssh--about-name">이름 : </span>
             <span class="ssh--about-content">OOO</span>
           </div>
           <div class="ssh--about-wrap">
-            <i class="ssh--about-icon">@</i>
+            <i class="bi bi-envelope"></i>
             <span class="ssh--about-name">이메일 : </span>
-            <span class="ssh--about-content">example@example.com</span>
+            <span class="ssh--about-content">example@domain.com</span>
           </div>
           <div class="ssh--about-wrap">
-            <i class="ssh--about-icon">@</i>
+            <i class="bi bi-telephone"></i>
             <span class="ssh--about-name">연락처 : </span>
             <span class="ssh--about-content">010-0000-0000</span>
           </div>
           <div class="ssh--about-wrap">
-            <i class="ssh--about-icon">@</i>
+            <i class="bi bi-book"></i>
             <span class="ssh--about-name">학력 : </span>
             <span class="ssh--about-content">OO대학교</span>
           </div>
           <div class="ssh--about-wrap">
-            <i class="ssh--about-icon">@</i>
+            <i class="bi bi-building"></i>
             <span class="ssh--about-name">학과 : </span>
             <span class="ssh--about-content">OO학과</span>
           </div>
@@ -113,12 +115,12 @@
     <section id="section-gitblog" class="border-bottom border-primary border-2 m-3">
         <h2 class="text-center">Github & Blog</h2>
         <hr class="ssh--divider__main">
-        <div class="d-flex justify-content-evenly">
+        <div class="d-flex justify-content-evenly m-3">
           <div class="ssh--gitblog-wrap">
             <div>
               <img src="./image/git-icon.png" alt="git-icon">
               <span class="gitblog-title">Github</span>
-              <i>@</i>
+              <i class="bi bi-box-arrow-up-right"></i>
             </div>
             <div>
               <ul>
@@ -132,7 +134,7 @@
             <div>
               <img src="./image/tistory-icon.png" alt="git-icon">
               <span class="gitblog-title">Tistory</span>
-              <i>@</i>
+              <i class="bi bi-box-arrow-up-right"></i>
             </div>
             <div>
               <ul>
@@ -147,7 +149,7 @@
     <section id="section-techstacks" class="border-bottom border-primary border-2 m-3">
         <h2 class="text-center">Tech Stacks</h2>
         <hr class="ssh--divider__main">
-        <ul class="ssh--techstacks-main-wrap bg-secondary d-flex justify-content-center">
+        <ul class="ssh--techstacks-main-wrap d-flex justify-content-center">
           <li class="ssh--techstacks-wrap">
             <div class="ssh--techstacks-icon">
               <img src="./image/html-icon.png" alt="">
@@ -209,34 +211,34 @@
               </div>
               <div class="text-center mt-3">
                 <button type="button" class="modal-btn btn btn-primary" data-target=".modal-1">자세히보기
-                  <i>@</i>
+                  <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button type="button" class="btn btn-outline-primary">배포URL
-                  <i>@</i>
+                  <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button type="button" class="btn btn-outline-primary">GitHub
-                  <i>@</i>
+                  <i class="bi bi-box-arrow-up-right"></i>
                 </button>
               </div>
               <hr>
               <ul class="ssh--project-detail">
                 <li>
-                  <i>@</i>
+                  <i class="bi bi-check2"></i>
                   <span>주요기능 :</span>
                   <span>내용</span>
                 </li>
                 <li>
-                  <i>@</i>
+                  <i class="bi bi-check2"></i>
                   <span>제작기간 :</span>
                   <span>20XX.XX.XX~XX.XX</span>
                 </li>
                 <li>
-                  <i>@</i>
+                  <i class="bi bi-check2"></i>
                   <span>제작인원 :</span>
                   <span>N명</span>
                 </li>
                 <li>
-                  <i>@</i>
+                  <i class="bi bi-check2"></i>
                   <span>사용기술 :</span>
                   <span>HTML, CSS, JS, React, Bootrap ...</span>
                 </li>
@@ -285,34 +287,34 @@
               </div>
               <div class="text-center mt-3">
                 <button type="button" class="modal-btn btn btn-primary" data-target=".modal-2">자세히보기
-                  <i>@</i>
+                  <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button type="button" class="btn btn-outline-primary">배포URL
-                  <i>@</i>
+                  <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button type="button" class="btn btn-outline-primary">GitHub
-                  <i>@</i>
+                  <i class="bi bi-box-arrow-up-right"></i>
                 </button>
               </div>
               <hr>
               <ul class="ssh--project-detail">
                 <li>
-                  <i>@</i>
+                  <i class="bi bi-check2"></i>
                   <span>주요기능 :</span>
                   <span>내용</span>
                 </li>
                 <li>
-                  <i>@</i>
+                  <i class="bi bi-check2"></i>
                   <span>제작기간 :</span>
                   <span>20XX.XX.XX~XX.XX</span>
                 </li>
                 <li>
-                  <i>@</i>
+                  <i class="bi bi-check2"></i>
                   <span>제작인원 :</span>
                   <span>N명</span>
                 </li>
                 <li>
-                  <i>@</i>
+                  <i class="bi bi-check2"></i>
                   <span>사용기술 :</span>
                   <span>HTML, CSS, JS, React, Bootrap ...</span>
                 </li>

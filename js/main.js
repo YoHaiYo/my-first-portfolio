@@ -86,6 +86,7 @@ toTopEl.addEventListener('click', function () {
   });
 });
 
+
 // Copyright연도 자동지정
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear(); // 2023 (올해년도 출력)
