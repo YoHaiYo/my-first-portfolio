@@ -125,34 +125,43 @@ a:hover {
   height: 300px;
 }
 
-.popup {
+.modal-box {
   display: none;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  padding: 2rem 2rem;
-  border-radius: 0.5rem;
+  width: 90vw;
+  height: 90vh;
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  z-index: 3;
 }
 
-.popup-active::before {
+body:before {
   content: "";
   position: fixed;
+  background-color: #333;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  display: none;
   z-index: 2;
-  background-color: rgba(72, 72, 72, 0.5);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }
 
-.popup-active .popup {
+.dark-box:before {
   display: block;
 }
 
-.popup .popup-close {
+.showdiv {
+  display: block !important;
+}
+
+.close-btn {
   position: absolute;
-  right: 1rem;
-  top: 0.5rem;
+  top: 2.5%;
+  right: 2.5%;
+  border: 0;
+  background-color: transparent;
 }

@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- JS -->
+  <script defer src="./js/jquery-v2.2.4.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
 
@@ -207,7 +208,9 @@
                 Animi ex pariatur ullam ut suscipit nobis!
               </div>
               <div class="text-center mt-3">
-                <button type="button" class="popup-open popup-num-1 btn btn-primary">자세히보기
+                <button type="button" 
+                class="modal-btn btn btn-primary"
+                data-target=".modal-1">자세히보기
                   <i>@</i>
                 </button>
                 <button type="button" class="btn btn-outline-primary">배포URL
@@ -243,12 +246,13 @@
             </div>            
           </div>
           <hr class="ssh--divider__sub">
-          <div class="popup-insect popup-num-1"></div>
-          <!-- <div id="popup" class="position-fixed z-3 bg-white border border-black">
-            <p>팝업내용</p>
-            <button class="popup-close bg-transparent border-0">X</button>
-          </div> -->          
-        </div> <!-- ssh--project-main-wrap -->
+          <!-- Modal -->
+          <div class="modal-box modal-1">
+            <button class="close-btn">닫기 X</button>
+            <p>모달 내용1</p>
+          </div><!-- /Modal -->
+        </div> <!-- /ssh--project-main-wrap -->
+
         <div class="ssh--project-main-wrap">
           <div class="ssh--project-title text-center mb-3">프로젝트 2 타이틀</div>
           <div class="ssh--project-wrap d-flex justify-content-around">
@@ -282,7 +286,9 @@
                 Animi ex pariatur ullam ut suscipit nobis!
               </div>
               <div class="text-center mt-3">
-                <button type="button" class="popup-open popup-num-1 btn btn-primary">자세히보기
+                <button type="button" 
+                class="modal-btn btn btn-primary"
+                data-target=".modal-2">자세히보기
                   <i>@</i>
                 </button>
                 <button type="button" class="btn btn-outline-primary">배포URL
@@ -318,12 +324,12 @@
             </div>            
           </div>
           <hr class="ssh--divider__sub">
-          <div class="popup-insect popup-num-1"></div>
-          <!-- <div id="popup" class="position-fixed z-3 bg-white border border-black">
-            <p>팝업내용</p>
-            <button class="popup-close bg-transparent border-0">X</button>
-          </div> -->          
-        </div> <!-- ssh--project-main-wrap -->
+          <!-- Modal -->
+          <div class="modal-box modal-2">
+            <button class="close-btn">닫기 X</button>
+            <p>모달 내용2</p>
+          </div><!-- /Modal -->
+        </div> <!-- /ssh--project-main-wrap -->
       
       </div>
     </div>

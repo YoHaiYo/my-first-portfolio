@@ -41,29 +41,18 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-/// PopUp Templet
-(function makePopUp() {
-  const newList = [];
-  let templet = "";
-    newList.push(`
-    <div class="popup position-fixed z-3 bg-white border border-black">
-      <p>팝업내용 1</p>
-      <button class="popup-close bg-transparent border-0">X</button>
-    </div>
-  `)
-  templet = newList.join('');
-  document.querySelector(`.popup-insect.popup-num-1`).innerHTML = templet;
-})();
-
-/// PopUp
- document.querySelector(`.popup .popup-close`).addEventListener('click',
- function(){
-   document.body.classList = ""
- }
-)
-
- document.querySelector(".popup-open.popup-num-1").addEventListener('click',
- function(){
-   document.body.classList += "popup-active"
- }
-)
+/// Modal
+$(document).ready(function() {
+  // 모달메뉴열기
+  $(".modal-btn").click(function() { 
+    $("body").addClass("dark-box");
+    // 여기서 this는 ".modal-btn"
+    // $(this).data('target') 자체가 .menu-1, .menu-2가 된다 !
+    $($(this).data('target')).addClass("showdiv")
+  })
+  // 모달메뉴 닫기
+  $(".close-btn").click(function() {  
+    $("body").removeClass("dark-box");
+    $(".modal-box").removeClass("showdiv");
+  })
+})
