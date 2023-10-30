@@ -121,8 +121,18 @@ a:hover {
 #section-wrap #section-project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-info .ssh--project-summary {
   white-space: pre-line;
 }
-#section-wrap #section-comment {
-  height: 300px;
+#section-wrap #section-contact .ssh--contact-wrap form[name=contact-info] {
+  width: 50%;
+  background-color: white;
+  box-shadow: rgba(149, 160, 165, 0.2) 0px 8px 25px;
+  border-radius: 1rem;
+}
+#section-wrap #section-contact .ssh--contact-wrap form[name=contact-info] input {
+  border: 1px solid rgba(98, 98, 98, 0.3490196078);
+  border-radius: 0.3rem;
+}
+#section-wrap #section-contact .ssh--contact-wrap form[name=contact-info] input[name=message] {
+  height: 150px;
 }
 
 .modal-box {

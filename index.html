@@ -26,7 +26,8 @@
 
 <body>
   <!-- <header id="hd" class="position-fixed top-0 start-50 translate-middle-x bg-white border-bottom border-primary"> -->
-  <header id="hd" class="container position-fixed top-0 start-0 end-0 mx-auto bg-white border-bottom border-primary border-2 z-1">
+  <header id="hd"
+    class="container position-fixed top-0 start-0 end-0 mx-auto bg-white border-bottom border-primary border-2 z-1">
     <div class="d-flex justify-content-between align-items-center">
       <h1><a href="">로고</a></h1>
       <nav class="navbar">
@@ -72,8 +73,7 @@
         </button>
       </div>
     </section>
-    <section id="section-about" class="border-bottom border-primary border-2">
-      <div class="m-3">
+    <section id="section-about" class="border-bottom border-primary border-2 m-3">
         <h2 class="text-center">About</h2>
         <hr class="ssh--divider__main">
         <!-- <div class="position-absolute start-50 translate-middle-x"> -->
@@ -104,10 +104,8 @@
             <span class="ssh--about-content">OO학과</span>
           </div>
         </div>
-      </div>
     </section>
-    <section id="section-gitblog" class="border-bottom border-primary border-2">
-      <div class="m-3">
+    <section id="section-gitblog" class="border-bottom border-primary border-2 m-3">
         <h2 class="text-center">Github & Blog</h2>
         <hr class="ssh--divider__main">
         <div class="d-flex justify-content-evenly">
@@ -140,10 +138,8 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
-    <section id="section-techstacks" class="border-bottom border-primary border-2">
-      <div class="m-3">
+    <section id="section-techstacks" class="border-bottom border-primary border-2 m-3">
         <h2 class="text-center">Tech Stacks</h2>
         <hr class="ssh--divider__main">
         <ul class="ssh--techstacks-main-wrap bg-secondary d-flex justify-content-center">
@@ -169,10 +165,9 @@
             <span class="ssh-techstacks-proficiency">Good</span>
           </li>
         </ul>
-      </div>
     </section>
-    <section id="section-project">
-      <div class="m-3">
+    <section id="section-project" class="border-bottom border-primary border-2 m-3">
+      
         <h2 class="text-center">Project</h2>
         <hr class="ssh--divider__main">
         <div class="ssh--project-main-wrap">
@@ -208,9 +203,7 @@
                 Animi ex pariatur ullam ut suscipit nobis!
               </div>
               <div class="text-center mt-3">
-                <button type="button" 
-                class="modal-btn btn btn-primary"
-                data-target=".modal-1">자세히보기
+                <button type="button" class="modal-btn btn btn-primary" data-target=".modal-1">자세히보기
                   <i>@</i>
                 </button>
                 <button type="button" class="btn btn-outline-primary">배포URL
@@ -243,7 +236,7 @@
                   <span>HTML, CSS, JS, React, Bootrap ...</span>
                 </li>
               </ul>
-            </div>            
+            </div>
           </div>
           <hr class="ssh--divider__sub">
           <!-- Modal -->
@@ -286,9 +279,7 @@
                 Animi ex pariatur ullam ut suscipit nobis!
               </div>
               <div class="text-center mt-3">
-                <button type="button" 
-                class="modal-btn btn btn-primary"
-                data-target=".modal-2">자세히보기
+                <button type="button" class="modal-btn btn btn-primary" data-target=".modal-2">자세히보기
                   <i>@</i>
                 </button>
                 <button type="button" class="btn btn-outline-primary">배포URL
@@ -321,7 +312,7 @@
                   <span>HTML, CSS, JS, React, Bootrap ...</span>
                 </li>
               </ul>
-            </div>            
+            </div>
           </div>
           <hr class="ssh--divider__sub">
           <!-- Modal -->
@@ -330,9 +321,28 @@
             <p>모달 내용2</p>
           </div><!-- /Modal -->
         </div> <!-- /ssh--project-main-wrap -->
-      
+
       </div>
-    </div>
+    </section> <!-- section-project -->
+    <section id="section-contact">
+      <h2 class="text-center">Contact</h2>
+      <hr class="ssh--divider__main">
+      <div class="ssh--contact-wrap m-3">
+        <form action="#" name="contact-info" method="post" class="container d-flex flex-column">
+          <label for="name">Name</label>
+          <input type="text" name="name" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" name="email" required>
+
+          <label for="message">Message</label>
+          <input type="text" name="message" required>
+  
+          <div class="d-flex justify-content-center">
+            <input type="submit" name="send-btn" value="Send" class="btn btn-outline-primary m-2">
+          </div>
+      </form>
+      </div>
     </section>
   </section> <!-- section-wrap -->
   <footer class="bg-secondary-subtle text-center">

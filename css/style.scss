@@ -157,8 +157,24 @@ a:hover {color: black; text-decoration: none;}
       }
     }
   }
-  #section-comment{
-    height: 300px;
+  #section-contact{
+    .ssh--contact-wrap{
+      form[name="contact-info"]{
+        width: 50%;        
+        background-color: white;
+        box-shadow: rgba(149, 160, 165, 0.2) 0px 8px 25px;
+        border-radius: 1rem;
+        input{
+          border: 1px solid #62626259;
+          border-radius: 0.3rem;
+
+        }
+        
+        input[name="message"]{
+          height: 150px;
+        }       
+      }      
+    }
   }
 } //#section-wrap
 footer {
