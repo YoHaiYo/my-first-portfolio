@@ -57,10 +57,9 @@ $(document).ready(function() {
   })
 })
 
-/// gsap 패키지
+/// gsap 패키지, lodash 패키지
 const toTopEl = document.querySelector('#to-top');
 
-/// lodash 패키지
 // _.throttle(함수, 시간) : 0.3초마다 실행되게 해주기. 이거 안하면 스크롤할때마다 수백번씩 실행됨.
 window.addEventListener('scroll', _.throttle(function() {
   console.log(window.scrollY);
