@@ -28,37 +28,39 @@ i{
 
 
 // MAIN
-.navbar {
-  #gnb {
-    // white-space: nowrap;
-    .ssh--gnbList { 
-      >a {      
-      padding-left: 1rem;
-      transition: .3s;
-      &:hover {
-        color: #0ca2ff;
-      }
+#hd {
+  .navbar {
+    #gnb {
+      // white-space: nowrap;
+      .ssh--gnbList { 
+        >a {      
+        padding-left: 1rem;
+        transition: .3s;
+        &:hover {
+          color: #0ca2ff;
+        }
+        }
       }
     }
-  }
-  .hamburger{
-    display: none;
-    cursor: pointer;
-    .bar {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      -webkit-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
-      background-color: #121244;
+    .hamburger{
+      display: none;
+      cursor: pointer;
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        background-color: #121244;
+      }
     }
   }
 }
 #section-wrap {
+  margin-top: 100px; // 고정된 헤더가 가리는 부분만큼
   
   #section-home{
-    margin-top: 100px; // 고정된 헤더가 가리는 부분만큼
   } //#section-home
   #section-about{  
     .ssh--about-main-wrap {

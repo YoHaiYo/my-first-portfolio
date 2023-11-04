@@ -62,7 +62,7 @@ const toTopEl = document.querySelector('#to-top');
 
 // _.throttle(함수, 시간) : 0.3초마다 실행되게 해주기. 이거 안하면 스크롤할때마다 수백번씩 실행됨.
 window.addEventListener('scroll', _.throttle(function() {
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
   if (window.scrollY > 500) {
     // gsap.to(요소, 지속시간(s), 옵션);
     // 버튼 보이기

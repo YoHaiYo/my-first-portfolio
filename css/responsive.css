@@ -7,7 +7,7 @@
   }
 
   .navbar .hamburger {
-    display: block;
+    display: block !important;
   }
 
   .navbar .hamburger.active .bar:nth-child(2) {
@@ -26,9 +26,9 @@
 
   .navbar .ssh--nav-menu {
     position: absolute;
+    flex-direction: column;    
     right: -25rem;
     top: 70px;    
-    flex-direction: column;    
     width: 12.5rem;
     transition: 0.5s;
   }
@@ -36,11 +36,13 @@
   .navbar .ssh--nav-menu.active {
     right: 0;    
   }
-  .navbar .ssh--nav-menu.active .ssh--gnbList{
-    /* background-color: aqua; */
+  .navbar .ssh--nav-menu .ssh--gnbList{
+    border: 1px solid darkblue;
+  }
+  .navbar .ssh--nav-menu .ssh--gnbList a{
+    display: inline-block;
     background-color: white;
-    border-bottom: 1px solid darkblue;
-    height: 3rem;
-    padding-top: .5rem;
+    width: 100%;
+    line-height: 3rem;
   }
 }

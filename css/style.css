@@ -39,18 +39,18 @@ i {
   font-size: 0.85rem;
 }
 
-.navbar #gnb .ssh--gnbList > a {
+#hd .navbar #gnb .ssh--gnbList > a {
   padding-left: 1rem;
   transition: 0.3s;
 }
-.navbar #gnb .ssh--gnbList > a:hover {
+#hd .navbar #gnb .ssh--gnbList > a:hover {
   color: #0ca2ff;
 }
-.navbar .hamburger {
+#hd .navbar .hamburger {
   display: none;
   cursor: pointer;
 }
-.navbar .hamburger .bar {
+#hd .navbar .hamburger .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -60,7 +60,7 @@ i {
   background-color: #121244;
 }
 
-#section-wrap #section-home {
+#section-wrap {
   margin-top: 100px;
 }
 #section-wrap #section-about .ssh--about-main-wrap {
