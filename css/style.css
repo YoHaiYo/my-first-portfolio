@@ -39,6 +39,9 @@ i {
   font-size: 0.85rem;
 }
 
+#hd {
+  height: 4rem;
+}
 #hd .navbar #gnb .ssh--gnbList > a {
   padding-left: 1rem;
   transition: 0.3s;

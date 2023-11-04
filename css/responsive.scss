@@ -1,0 +1,49 @@
+@import "./mixin";
+
+@include mobile {
+
+  .hamburger{
+    display: block !important;
+  }
+  .hamburger.active{
+    .bar:nth-child(2){
+      opacity: 0;
+    }
+    .bar:nth-child(1){
+      width: 30px;
+    transform: translateY(8px) rotate(-45deg);
+    }
+    .bar:nth-child(3){
+      width: 30px;
+    transform: translateY(-8px) rotate(45deg);
+    }
+  }
+  .ssh--nav-menu{
+    position: absolute;
+    flex-direction: column;    
+    right: -25rem;
+    top: 70px;    
+    width: 12.5rem;
+    transition: 0.5s;
+    .ssh--gnbList{
+      border: 1px solid darkblue;
+      a{
+        display: inline-block;
+        background-color: white;
+        width: 100%;
+        line-height: 3rem;
+      }
+    }
+  }
+  .ssh--nav-menu.active{
+    right: 0;    
+  }
+}
+
+@include tablet {
+
+}
+
+@include desktop {
+  
+}
