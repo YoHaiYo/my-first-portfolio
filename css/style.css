@@ -39,8 +39,12 @@ i {
   font-size: 0.85rem;
 }
 
+.inner-link {
+  height: 50px;
+}
+
 #hd {
-  height: 4rem;
+  height: 4.3rem;
 }
 #hd h1 a {
   font-size: 2rem;

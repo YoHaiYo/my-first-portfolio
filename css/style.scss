@@ -1,3 +1,4 @@
+@import "./variables";
 // Reset
 * {margin: 0;padding: 0;}
 li {list-style: none;}
@@ -26,16 +27,14 @@ i{
   font-size: .85rem;
 }
 
-#link-gitblog{
-  height: 100px;
-  width: 100px;
-  background-color: skyblue;
+.inner-link{
+  height: 50px;
 }
 
 
 // MAIN
 #hd {
-  height: 4rem;
+  height: 4.3rem;
   h1{
     a{
       font-size: 2rem;
