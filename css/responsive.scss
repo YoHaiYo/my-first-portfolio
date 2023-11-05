@@ -39,6 +39,10 @@
     right: 0;    
   }
 
+  .ssh--about-main-wrap {
+    width: 80%; 
+  }
+
   .ssh--gitblog-main-wrap{
     display: block;
   }
@@ -48,6 +52,11 @@
       height: 100%;
     } // SWIPER
 
+    .ssh--contact-wrap{
+      form[name="contact-info"]{
+        width: 90%;      
+      }      
+    }
   
 } //mobile
 
@@ -60,7 +69,9 @@
       font-size: .8rem;
     } 
   }
-
+  .ssh--about-main-wrap {
+    width: 50%; 
+  }
   .ssh--project-wrap{
     display: flex;
     .ssh--project-slide{
@@ -69,6 +80,12 @@
       margin: 1rem;
     }
   }
+
+  .ssh--contact-wrap{
+    form[name="contact-info"]{
+      width: 70%;      
+    }      
+  }
 } // tablet
 
 @include desktop {
@@ -76,6 +93,9 @@
     .logo-title::after{
       content: "Portfolio";
     }
+  }
+  .ssh--about-main-wrap {
+    width: 30%;
   }
   .ssh--gitblog-main-wrap{
     display: flex;        
@@ -93,5 +113,16 @@
       height: 40%;
       margin: 1rem;
     }
+  }
+
+  .ssh--techstacks-main-wrap{
+    width: 70%;
+    margin:  0 auto;
+  }
+
+  .ssh--contact-wrap{
+    form[name="contact-info"]{
+      width: 50%;      
+    }      
   }
 } // desktop

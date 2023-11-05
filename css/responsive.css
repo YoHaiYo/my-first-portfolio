@@ -33,12 +33,18 @@
   .ssh--nav-menu.active {
     right: 0;
   }
+  .ssh--about-main-wrap {
+    width: 80%;
+  }
   .ssh--gitblog-main-wrap {
     display: block;
   }
   .swiper {
     width: 100%;
     height: 100%;
+  }
+  .ssh--contact-wrap form[name=contact-info] {
+    width: 90%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -49,6 +55,9 @@
     width: 50%;
     font-size: 0.8rem;
   }
+  .ssh--about-main-wrap {
+    width: 50%;
+  }
   .ssh--project-wrap {
     display: flex;
   }
@@ -57,10 +66,16 @@
     height: 50%;
     margin: 1rem;
   }
+  .ssh--contact-wrap form[name=contact-info] {
+    width: 70%;
+  }
 }
 @media (min-width: 1024px) {
   #hd .logo-title::after {
     content: "Portfolio";
+  }
+  .ssh--about-main-wrap {
+    width: 30%;
   }
   .ssh--gitblog-main-wrap {
     display: flex;
@@ -76,5 +91,12 @@
     width: 40%;
     height: 40%;
     margin: 1rem;
+  }
+  .ssh--techstacks-main-wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .ssh--contact-wrap form[name=contact-info] {
+    width: 50%;
   }
 }
