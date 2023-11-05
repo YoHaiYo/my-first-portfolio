@@ -1,5 +1,17 @@
 /// hamburger menu button 
- document.addEventListener("DOMContentLoaded", function() {
+$(document).ready(function() {  
+  $(".hamburger").on("click", function() {
+      $(".hamburger").toggleClass("active");
+      $(".ssh--nav-menu").toggleClass("active");
+  });
+  
+  $(".nav-link").on("click", function() {
+      $(".hamburger").removeClass("active");
+      $(".ssh--nav-menu").removeClass("active");
+  });
+});
+// hamburger menu button Vanilla JS
+ /* document.addEventListener("DOMContentLoaded", function() {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".ssh--nav-menu");
  
@@ -14,8 +26,7 @@
      navMenu.classList.remove("active");
    })
   )
-});
-
+}); */
 
 /// swiper 
 const swiper = new Swiper('.swiper', {

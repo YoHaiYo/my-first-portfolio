@@ -21,10 +21,10 @@
     width: 12.5rem;
     transition: 0.5s;
   }
-  .ssh--nav-menu .ssh--gnbList {
-    border: 1px solid darkblue;
+  .ssh--nav-menu .ssh--gnb-list {
+    border: 1px solid #0ca2ff;
   }
-  .ssh--nav-menu .ssh--gnbList a {
+  .ssh--nav-menu .ssh--gnb-list a {
     display: inline-block;
     background-color: white;
     width: 100%;
@@ -32,5 +32,49 @@
   }
   .ssh--nav-menu.active {
     right: 0;
+  }
+  .ssh--gitblog-main-wrap {
+    display: block;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ssh--gitblog-main-wrap {
+    display: flex;
+  }
+  .ssh--gitblog-main-wrap .ssh--gitblog-wrap {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  .ssh--project-wrap {
+    display: flex;
+  }
+  .ssh--project-wrap .ssh--project-slide {
+    width: 50%;
+    height: 50%;
+    margin: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  #hd .logo-title::after {
+    content: "Portfolio";
+  }
+  .ssh--gitblog-main-wrap {
+    display: flex;
+  }
+  .ssh--gitblog-main-wrap .ssh--gitblog-wrap {
+    width: 400px;
+    height: 200px;
+  }
+  .ssh--project-wrap {
+    display: flex;
+  }
+  .ssh--project-wrap .ssh--project-slide {
+    width: 40%;
+    height: 40%;
+    margin: 1rem;
   }
 }

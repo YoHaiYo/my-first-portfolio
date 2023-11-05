@@ -1,10 +1,10 @@
-// 리셋
+// Reset
 * {margin: 0;padding: 0;}
 li {list-style: none;}
 a {color: black; text-decoration: none;}
 a:hover {color: black; text-decoration: none;}
 
-// 공통
+// Common
 // .wrap {max-width: 1280px; margin: 0 auto;}
 .ssh--divider__main {
   width: 23.25rem;
@@ -26,19 +26,34 @@ i{
   font-size: .85rem;
 }
 
+#link-gitblog{
+  height: 100px;
+  width: 100px;
+  background-color: skyblue;
+}
+
 
 // MAIN
 #hd {
   height: 4rem;
+  h1{
+    a{
+      font-size: 2rem;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+  }
   .navbar {
     #gnb {
       // white-space: nowrap;
-      .ssh--gnbList { 
+      .ssh--gnb-list { 
         >a {      
         padding-left: 1rem;
         transition: .3s;
+        font-weight: bold;
+        color: #333;
         &:hover {
-          color: #0ca2ff;
+          color: #{$ssh-blue};
         }
         }
       }
@@ -64,6 +79,7 @@ i{
   #section-home{
   } //#section-home
   #section-about{  
+    //padding: 65px 0 40px; // gnb 클릭시 이동될때 헤더에 가려지는 부분 고려.
     .ssh--about-main-wrap {
       width: 30%; // 반응형 작업할때 조절하기
       .ssh--about-wrap{
@@ -77,23 +93,35 @@ i{
       }} 
   } //#section-about
   #section-gitblog {
-    .ssh--gitblog-wrap{
-      width: 25%;
+    .ssh--gitblog-wrap{      
       border-radius: 0.75rem;
-      background-color: white;
       box-shadow: rgba(149, 160, 165, 0.494) 0px 8px 15px;
+      margin: .5rem;
+      .ssh--gitblog-img{
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      .gitblog-title{
+        font-size: 1.5rem;        
+        font-weight: bold;
+      }
     }
   } //#section-gitblog
   #section-techstacks {
    .ssh--techstacks-main-wrap {
+    flex-wrap: wrap;
     .ssh--techstacks-wrap{
       position: relative;
       &:hover {     
-        .ssh-techstacks-proficiency,
         .ssh--techstacks-name{
           opacity: 1;
           transition: .3s;
-          transform: translate(-50%,0%);   
+          transform: translate(-50%,-50%);   
+        }
+        .ssh-techstacks-proficiency{
+          opacity: 1;
+          transition: .3s;
+          transform: translate(-50%,-20%);   
         }
         .ssh--techstacks-icon{
           background-color: #0062ff;          
@@ -108,23 +136,35 @@ i{
         margin: 0.5rem;
         >img{
           width: 6rem;
-          height: auto;
+          height: 6rem;
         }
       }
-      .ssh--techstacks-name,
-      .ssh-techstacks-proficiency{
+      .ssh--techstacks-name,.ssh-techstacks-proficiency{
         opacity: 0;
         position: absolute;
-        left: 50%;
-        color: #fff;      
+        left: 50%;      
       }
       .ssh--techstacks-name{
         top: 30%;
         transform: translate(-50%,-50%);
+        color: #fff;
+        font-weight: 600;
       }
       .ssh-techstacks-proficiency{
+        text-align: center;
         top: 50%;
         transform: translate(-50%,+50%);
+        width: 80%;
+        border: .5px solid #fff;
+        border-radius: .5rem;
+        background-color: rgba(255, 255, 255, 0.502);
+        .ssh-techstacks-proficiency__star{
+          color: rgb(248, 248, 69);
+        }
+        .ssh-techstacks-proficiency__text{
+          font-weight: 600;
+          color: rgb(17, 0, 255);
+        }
       }
     }
    } 
@@ -138,8 +178,7 @@ i{
       .ssh--project-wrap{
         .ssh--project-slide{
           .swiper{ // SWIPER
-            width: 25rem;
-            height: 22rem;
+            // width: 50vw; height: 40vw; // swiper 사이즈는 각각 반응형으로 처리하기.            
             border: 1px solid #333;
             .swiper-wrapper{
               .swiper-slide{

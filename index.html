@@ -10,7 +10,7 @@
   <!-- BOOTSTRAP -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- ICON -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
@@ -22,10 +22,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- lodash -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- gsap & ScrollToPlugin -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js" integrity="sha512-5ZqpMmz0hz6IocEQqdQ3sns2rJ+8ODVbZflfapvz26ZaP3nZrEjnNrpOaEW97bQYIg0XbkjFdZUun701YjOr5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+    integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"
+    integrity="sha512-5ZqpMmz0hz6IocEQqdQ3sns2rJ+8ODVbZflfapvz26ZaP3nZrEjnNrpOaEW97bQYIg0XbkjFdZUun701YjOr5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- JS -->
   <script defer src="./js/jquery-v2.2.4.js"></script>
   <script defer src="./js/main.js"></script>
@@ -35,297 +41,330 @@
   <!-- <header id="hd" class="position-fixed top-0 start-50 translate-middle-x bg-white border-bottom border-primary"> -->
   <header id="hd"
     class="container position-fixed top-0 start-0 end-0 mx-auto bg-white border-bottom border-primary border-2 z-1 d-flex justify-content-between align-items-center">
-   
-      <h1><a href="">로고</a></h1>
-      <nav class="navbar">
-        <ul id="gnb" class="ssh--nav-menu d-flex mt-3">
-          <li class="ssh--gnbList"><a href="#">Home</a></li>
-          <li class="ssh--gnbList"><a href="#section-about">About
-            </a></li>
-          <li class="ssh--gnbList"><a href="#section-gitblog">Github & Blog</a></li>
-          <li class="ssh--gnbList"><a href="#section-techstacks">Tech Stacks</a></li>
-          <li class="ssh--gnbList"><a href="#section-project">Project</a></li>
-          <li class="ssh--gnbList"><a href="#section-contact">Contact</a></li>
-          <!-- <li class="ssh--gnbList"><a href="">Comment</a></li> -->
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
+
+    <h1><a class="logo-title" href="#">SSH's </a></h1>
+    <nav class="navbar">
+      <ul id="gnb" class="ssh--nav-menu d-flex mt-3">
+        <li class="ssh--gnb-list"><a href="#">Home</a></li>
+        <li class="ssh--gnb-list"><a href="#section-about">About
+          </a></li>
+        <li class="ssh--gnb-list"><a href="#test">Github & Blog</a></li>
+        <li class="ssh--gnb-list"><a href="#section-techstacks">Tech Stacks</a></li>
+        <li class="ssh--gnb-list"><a href="#section-project">Project</a></li>
+        <li class="ssh--gnb-list"><a href="#section-contact">Contact</a></li>
+        <!-- <li class="ssh--gnb-list"><a href="#none">Comment</a></li> -->
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
   </header>
   <section id="section-wrap" class="container border-bottom border-primary border-2">
     <section id="section-home" class="border-bottom border-primary border-2 text-center m-3">
-        <p>
-          프론트엔드 개발자 <br>
-          김OO
-        </p>
-        <hr class="ssh--divider__sub">
-        <p>
-          간단한 소개와 <br>
-          자신의 강점 어필
-        </p>
-        <hr class="ssh--divider__sub">
-        <p>
-          강점에 대한 근거소개
-        </p>
-        <button type="button" class="btn btn-primary ">
-          <div class="d-flex">
-            <p class="m-0">바로가기</p>
-            <i class="bi bi-box-arrow-up-right"></i>
-          </div>
-        </button>        
+      <p>
+        프론트엔드 개발자 <br>
+        김OO
+      </p>
+      <hr class="ssh--divider__sub">
+      <p>
+        간단한 소개와 <br>
+        자신의 강점 어필
+      </p>
+      <hr class="ssh--divider__sub">
+      <p>
+        강점에 대한 근거소개
+      </p>
+      <button type="button" class="btn btn-primary ">
+        <div class="d-flex">
+          <p class="m-0">바로가기</p>
+          <i class="bi bi-box-arrow-up-right"></i>
+        </div>
+      </button>
     </section>
 
     <section id="section-about" class="border-bottom border-primary border-2 m-3">
-        <h2 class="text-center">About</h2>
-        <hr class="ssh--divider__main">
-        <!-- <div class="position-absolute start-50 translate-middle-x"> -->
-        <div class="ssh--about-main-wrap start-0 end-0 mx-auto">
-          <div class="ssh--about-wrap">
-            <i class="bi bi-person-circle"></i>
-            <span class="ssh--about-name">이름 : </span>
-            <span class="ssh--about-content">OOO</span>
-          </div>
-          <div class="ssh--about-wrap">
-            <i class="bi bi-envelope"></i>
-            <span class="ssh--about-name">이메일 : </span>
-            <span class="ssh--about-content">example@domain.com</span>
-          </div>
-          <div class="ssh--about-wrap">
-            <i class="bi bi-telephone"></i>
-            <span class="ssh--about-name">연락처 : </span>
-            <span class="ssh--about-content">010-0000-0000</span>
-          </div>
-          <div class="ssh--about-wrap">
-            <i class="bi bi-book"></i>
-            <span class="ssh--about-name">학력 : </span>
-            <span class="ssh--about-content">OO대학교</span>
-          </div>
-          <div class="ssh--about-wrap">
-            <i class="bi bi-building"></i>
-            <span class="ssh--about-name">학과 : </span>
-            <span class="ssh--about-content">OO학과</span>
-          </div>
+      <h2 class="text-center">About</h2>
+      <hr class="ssh--divider__main">
+      <!-- <div class="position-absolute start-50 translate-middle-x"> -->
+      <div class="ssh--about-main-wrap start-0 end-0 mx-auto">
+        <div class="ssh--about-wrap">
+          <i class="bi bi-person-circle"></i>
+          <span class="ssh--about-name">이름 : </span>
+          <span class="ssh--about-content">OOO</span>
         </div>
+        <div class="ssh--about-wrap">
+          <i class="bi bi-envelope"></i>
+          <span class="ssh--about-name">이메일 : </span>
+          <span class="ssh--about-content">example@domain.com</span>
+        </div>
+        <div class="ssh--about-wrap">
+          <i class="bi bi-telephone"></i>
+          <span class="ssh--about-name">연락처 : </span>
+          <span class="ssh--about-content">010-0000-0000</span>
+        </div>
+        <div class="ssh--about-wrap">
+          <i class="bi bi-book"></i>
+          <span class="ssh--about-name">학력 : </span>
+          <span class="ssh--about-content">OO대학교</span>
+        </div>
+        <div class="ssh--about-wrap">
+          <i class="bi bi-building"></i>
+          <span class="ssh--about-name">학과 : </span>
+          <span class="ssh--about-content">OO학과</span>
+        </div>
+      </div>
+
+      <div id="link-gitblog" class="inner-link">TEST</div>
+      
     </section>
     <section id="section-gitblog" class="border-bottom border-primary border-2 m-3">
-        <h2 class="text-center">Github & Blog</h2>
-        <hr class="ssh--divider__main">
-        <div class="d-flex justify-content-evenly m-3">
-          <div class="ssh--gitblog-wrap">
-            <div>
-              <img src="./image/git-icon.png" alt="git-icon">
-              <span class="gitblog-title">Github</span>
+      <h2 class="text-center">Github & Blog</h2>
+      <hr class="ssh--divider__main">
+      <div class="ssh--gitblog-main-wrap justify-content-evenly m-3">
+        <div class="ssh--gitblog-wrap p-2">
+          <a href="#none">
+            <div class="d-flex justify-content-center align-items-center">
+              <img class="ssh--gitblog-img" src="./image/git-icon.png" alt="git-icon">
+              <span class="gitblog-title mx-3">Github</span>
               <i class="bi bi-box-arrow-up-right"></i>
             </div>
             <div>
-              <ul>
-                <li>내용1</li>
-                <li>내용2</li>
-                <li>내용3</li>
+              <ul class="m-3">
+                <li>소스 코드 저장소입니다.</li>
+                <li>토이 프로젝트, 개인 프로젝트 소스코드.</li>
+                <li>혼자서 코딩 연습 및 테스트 소스코드.</li>
               </ul>
             </div>
-          </div>
-          <div class="ssh--gitblog-wrap">
-            <div>
-              <img src="./image/tistory-icon.png" alt="git-icon">
-              <span class="gitblog-title">Tistory</span>
-              <i class="bi bi-box-arrow-up-right"></i>
-            </div>
-            <div>
-              <ul>
-                <li>내용1</li>
-                <li>내용2</li>
-                <li>내용3</li>
-              </ul>
-            </div>
-          </div>
+          </a>
         </div>
+        <div class="ssh--gitblog-wrap p-2">
+          <a href="#none">
+            <div class="d-flex justify-content-center align-items-center">
+              <img class="ssh--gitblog-img" src="./image/tistory-icon.png" alt="git-icon">
+              <span class="gitblog-title mx-3">Tistory</span>
+              <i class="bi bi-box-arrow-up-right"></i>
+            </div>
+            <div>
+              <ul class="m-3">
+                <li>스터디 및 지식공유 목적의 블로그입니다.</li>
+                <li>공부한 것을 다시 한번 제대로 정리하기 위한 기록.</li>
+                <li>웹, CS 관련지식, 각종 it 꿀정보 정리.</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
     <section id="section-techstacks" class="border-bottom border-primary border-2 m-3">
-        <h2 class="text-center">Tech Stacks</h2>
-        <hr class="ssh--divider__main">
-        <ul class="ssh--techstacks-main-wrap d-flex justify-content-center">
-          <li class="ssh--techstacks-wrap">
-            <div class="ssh--techstacks-icon">
-              <img src="./image/html-icon.png" alt="">
-            </div>
-            <span class="ssh--techstacks-name">HTML</span>
-            <span class="ssh-techstacks-proficiency">Good</span>
-          </li>
-          <li class="ssh--techstacks-wrap">
-            <div class="ssh--techstacks-icon">
-              <img src="./image/html-icon.png" alt="">
-            </div>
-            <span class="ssh--techstacks-name">HTML</span>
-            <span class="ssh-techstacks-proficiency">Good</span>
-          </li>
-          <li class="ssh--techstacks-wrap">
-            <div class="ssh--techstacks-icon">
-              <img src="./image/html-icon.png" alt="">
-            </div>
-            <span class="ssh--techstacks-name">HTML</span>
-            <span class="ssh-techstacks-proficiency">Good</span>
-          </li>
-        </ul>
+      <h2 class="text-center">Tech Stacks</h2>
+      <hr class="ssh--divider__main">
+      <ul class="ssh--techstacks-main-wrap d-flex justify-content-center p-0">
+
+        <li class="ssh--techstacks-wrap">
+          <div class="ssh--techstacks-icon">
+            <img src="./image/html.png" alt="html-icon">
+          </div>
+          <div class="ssh--techstacks-name">HTML</div>
+          <div class="ssh-techstacks-proficiency">
+            <div class="ssh-techstacks-proficiency__star">★★☆</div>
+            <div class="ssh-techstacks-proficiency__text">Familiar</div>
+          </div>
+        </li> <!-- /techstacks-wrap -->
+        <li class="ssh--techstacks-wrap">
+          <div class="ssh--techstacks-icon">
+            <img src="./image/css.png" alt="css-icon">
+          </div>
+          <span class="ssh--techstacks-name">CSS</span>
+          <span class="ssh-techstacks-proficiency">
+            <div class="ssh-techstacks-proficiency__star">★★☆</div>
+            <div class="ssh-techstacks-proficiency__text">Familiar</div>
+          </span>
+        </li> <!-- /techstacks-wrap -->
+        <li class="ssh--techstacks-wrap">
+          <div class="ssh--techstacks-icon">
+            <img src="./image/javascript.jpeg" alt="javascript-icon">
+          </div>
+          <span class="ssh--techstacks-name">JavaScript</span>
+          <span class="ssh-techstacks-proficiency">
+            <div class="ssh-techstacks-proficiency__star">★★★</div>
+            <div class="ssh-techstacks-proficiency__text">Advanced</div>
+          </span>
+        </li> <!-- /techstacks-wrap -->
+        <li class="ssh--techstacks-wrap">
+          <div class="ssh--techstacks-icon">
+            <img src="./image/typescript.jpg" alt="typescript-icon">
+          </div>
+          <span class="ssh--techstacks-name">TypeScript</span>
+          <span class="ssh-techstacks-proficiency">
+            <div class="ssh-techstacks-proficiency__star">★☆☆</div>
+            <div class="ssh-techstacks-proficiency__text">Tried</div>
+          </span>
+        </li> <!-- /techstacks-wrap -->
+
+      </ul>
     </section>
     <section id="section-project" class="border-bottom border-primary border-2 m-3">
-      
-        <h2 class="text-center">Project</h2>
-        <hr class="ssh--divider__main">
-        <div class="ssh--project-main-wrap">
-          <div class="ssh--project-title text-center mb-3">프로젝트 1 타이틀</div>
-          <div class="ssh--project-wrap d-flex justify-content-around">
-            <div class="ssh--project-slide z-0">
-              <!-- SWIPER -->
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./image/project-preview-1-1.png" alt="프로젝트미리보기">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./image/project-preview-1-2.png" alt="프로젝트미리보기">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./image/project-preview-1-2.png" alt="프로젝트미리보기">
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-              <!-- /SWIPER -->
-            </div>
-            <div class="ssh--project-info">
-              <div class="ssh--project-summary">
-                프로젝트에 대한 요약내용
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
-                Ut iure perferendis non sunt adipisci animi amet,
-                dolor aspernatur facilis porro deserunt quam aliquam!
-                Animi ex pariatur ullam ut suscipit nobis!
-              </div>
-              <div class="text-center mt-3">
-                <button type="button" class="modal-btn btn btn-primary" data-target=".modal-1">자세히보기
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </button>
-                <button type="button" class="btn btn-outline-primary">배포URL
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </button>
-                <button type="button" class="btn btn-outline-primary">GitHub
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </button>
-              </div>
-              <hr>
-              <ul class="ssh--project-detail">
-                <li>
-                  <i class="bi bi-check2"></i>
-                  <span>주요기능 :</span>
-                  <span>내용</span>
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  <span>제작기간 :</span>
-                  <span>20XX.XX.XX~XX.XX</span>
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  <span>제작인원 :</span>
-                  <span>N명</span>
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  <span>사용기술 :</span>
-                  <span>HTML, CSS, JS, React, Bootrap ...</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <hr class="ssh--divider__sub">
-          <!-- Modal -->
-          <div class="modal-box modal-1">
-            <button class="close-btn">닫기 X</button>
-            <p>모달 내용1</p>
-          </div><!-- /Modal -->
-        </div> <!-- /ssh--project-main-wrap -->
 
-        <div class="ssh--project-main-wrap">
-          <div class="ssh--project-title text-center mb-3">프로젝트 2 타이틀</div>
-          <div class="ssh--project-wrap d-flex justify-content-around">
-            <div class="ssh--project-slide z-0">
-              <!-- SWIPER -->
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./image/project-preview-1-1.png" alt="프로젝트미리보기">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./image/project-preview-1-2.png" alt="프로젝트미리보기">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./image/project-preview-1-2.png" alt="프로젝트미리보기">
-                  </div>
+      <h2 class="text-center">Project</h2>
+      <hr class="ssh--divider__main">
+
+      <div class="ssh--project-main-wrap">
+        <div class="ssh--project-title text-center mb-3">프로젝트 1 타이틀</div>
+        <div class="ssh--project-wrap justify-content-around">
+          <div class="ssh--project-slide z-0">
+            <!-- SWIPER -->
+            <div class="swiper z-0">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./image/project-preview-1-1.png" alt="프로젝트미리보기">
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-slide">
+                  <img src="./image/project-preview-1-2.png" alt="프로젝트미리보기">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/project-preview-1-2.png" alt="프로젝트미리보기">
+                </div>
               </div>
-              <!-- /SWIPER -->
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
-            <div class="ssh--project-info">
-              <div class="ssh--project-summary">
-                프로젝트에 대한 요약내용
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
-                Ut iure perferendis non sunt adipisci animi amet,
-                dolor aspernatur facilis porro deserunt quam aliquam!
-                Animi ex pariatur ullam ut suscipit nobis!
-              </div>
-              <div class="text-center mt-3">
-                <button type="button" class="modal-btn btn btn-primary" data-target=".modal-2">자세히보기
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </button>
-                <button type="button" class="btn btn-outline-primary">배포URL
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </button>
-                <button type="button" class="btn btn-outline-primary">GitHub
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </button>
-              </div>
-              <hr>
-              <ul class="ssh--project-detail">
-                <li>
-                  <i class="bi bi-check2"></i>
-                  <span>주요기능 :</span>
-                  <span>내용</span>
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  <span>제작기간 :</span>
-                  <span>20XX.XX.XX~XX.XX</span>
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  <span>제작인원 :</span>
-                  <span>N명</span>
-                </li>
-                <li>
-                  <i class="bi bi-check2"></i>
-                  <span>사용기술 :</span>
-                  <span>HTML, CSS, JS, React, Bootrap ...</span>
-                </li>
-              </ul>
-            </div>
+            <!-- /SWIPER -->
           </div>
-          <hr class="ssh--divider__sub">
-          <!-- Modal -->
-          <div class="modal-box modal-2">
-            <button class="close-btn">닫기 X</button>
-            <p>모달 내용2</p>
-          </div><!-- /Modal -->
-        </div> <!-- /ssh--project-main-wrap -->
+          <div class="ssh--project-info">
+            <div class="ssh--project-summary">
+              프로젝트에 대한 요약내용
+              Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit.
+              Ut iure perferendis non sunt adipisci animi amet,
+              dolor aspernatur facilis porro deserunt quam aliquam!
+              Animi ex pariatur ullam ut suscipit nobis!
+            </div>
+            <div class="text-center mt-3">
+              <button type="button" class="modal-btn btn btn-primary" data-target=".modal-1">자세히보기
+                <i class="bi bi-box-arrow-up-right"></i>
+              </button>
+              <button type="button" class="btn btn-outline-primary">배포URL
+                <i class="bi bi-box-arrow-up-right"></i>
+              </button>
+              <button type="button" class="btn btn-outline-primary">GitHub
+                <i class="bi bi-box-arrow-up-right"></i>
+              </button>
+            </div>
+            <hr>
+            <ul class="ssh--project-detail">
+              <li>
+                <i class="bi bi-check2"></i>
+                <span>주요기능 :</span>
+                <span>내용</span>
+              </li>
+              <li>
+                <i class="bi bi-check2"></i>
+                <span>제작기간 :</span>
+                <span>20XX.XX.XX~XX.XX</span>
+              </li>
+              <li>
+                <i class="bi bi-check2"></i>
+                <span>제작인원 :</span>
+                <span>N명</span>
+              </li>
+              <li>
+                <i class="bi bi-check2"></i>
+                <span>사용기술 :</span>
+                <span>HTML, CSS, JS, React, Bootrap ...</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="ssh--divider__sub">
+        <!-- Modal -->
+        <div class="modal-box modal-1">
+          <button class="close-btn">닫기 X</button>
+          <p>모달 내용1</p>
+        </div><!-- /Modal -->
+      </div> <!-- /ssh--project-main-wrap -->
+
+      <div class="ssh--project-main-wrap">
+        <div class="ssh--project-title text-center mb-3">프로젝트 1 타이틀</div>
+        <div class="ssh--project-wrap justify-content-around">
+          <div class="ssh--project-slide z-0">
+            <!-- SWIPER -->
+            <div class="swiper z-0">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./image/project-preview-1-1.png" alt="프로젝트미리보기">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/project-preview-1-2.png" alt="프로젝트미리보기">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/project-preview-1-2.png" alt="프로젝트미리보기">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <!-- /SWIPER -->
+          </div>
+          <div class="ssh--project-info">
+            <div class="ssh--project-summary">
+              프로젝트에 대한 요약내용
+              Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit.
+              Ut iure perferendis non sunt adipisci animi amet,
+              dolor aspernatur facilis porro deserunt quam aliquam!
+              Animi ex pariatur ullam ut suscipit nobis!
+            </div>
+            <div class="text-center mt-3">
+              <button type="button" class="modal-btn btn btn-primary" data-target=".modal-1">자세히보기
+                <i class="bi bi-box-arrow-up-right"></i>
+              </button>
+              <button type="button" class="btn btn-outline-primary">배포URL
+                <i class="bi bi-box-arrow-up-right"></i>
+              </button>
+              <button type="button" class="btn btn-outline-primary">GitHub
+                <i class="bi bi-box-arrow-up-right"></i>
+              </button>
+            </div>
+            <hr>
+            <ul class="ssh--project-detail">
+              <li>
+                <i class="bi bi-check2"></i>
+                <span>주요기능 :</span>
+                <span>내용</span>
+              </li>
+              <li>
+                <i class="bi bi-check2"></i>
+                <span>제작기간 :</span>
+                <span>20XX.XX.XX~XX.XX</span>
+              </li>
+              <li>
+                <i class="bi bi-check2"></i>
+                <span>제작인원 :</span>
+                <span>N명</span>
+              </li>
+              <li>
+                <i class="bi bi-check2"></i>
+                <span>사용기술 :</span>
+                <span>HTML, CSS, JS, React, Bootrap ...</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="ssh--divider__sub">
+        <!-- Modal -->
+        <div class="modal-box modal-1">
+          <button class="close-btn">닫기 X</button>
+          <p>모달 내용1</p>
+        </div><!-- /Modal -->
+      </div> <!-- /ssh--project-main-wrap -->
+
+
+
+
 
       </div>
     </section> <!-- section-project -->
@@ -342,11 +381,11 @@
 
           <label for="message">Message</label>
           <input type="text" name="message" required>
-  
+
           <div class="d-flex justify-content-center">
             <input type="submit" name="send-btn" value="Send" class="btn btn-outline-primary m-2">
           </div>
-      </form>
+        </form>
       </div>
     </section>
   </section> <!-- section-wrap -->
