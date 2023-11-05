@@ -224,11 +224,13 @@ i{
           } // SWIPER
         }
         .ssh--project-info{
-          width: 25rem;
           .ssh--project-summary{
-            white-space: pre-line;
+            white-space: pre-line;            
           }
-          .ssh--project-detail{}
+          .ssh--project-btn-group{
+          }
+          .ssh--project-detail{
+          }
         }
       }
     }

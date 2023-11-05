@@ -43,6 +43,13 @@
     width: 80%; 
   }
 
+  .ssh--project-btn-group{
+    display: flex;
+    flex-direction: column;    
+    width: 50%;
+    margin: 0 auto;
+  }
+
   .ssh--gitblog-main-wrap{
     display: block;
   }
@@ -78,6 +85,12 @@
       width: 50%;
       height: 50%;
       margin: 1rem;
+    }
+    .ssh--project-btn-group{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 0 auto;
     }
   }
 

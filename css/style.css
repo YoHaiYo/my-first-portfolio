@@ -194,9 +194,6 @@ i {
   width: 100%;
   height: 100%;
 }
-#section-wrap #section-project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-info {
-  width: 25rem;
-}
 #section-wrap #section-project .ssh--project-main-wrap .ssh--project-wrap .ssh--project-info .ssh--project-summary {
   white-space: pre-line;
 }
