@@ -91,7 +91,7 @@ i{
       border-radius: 0.75rem;
       box-shadow: rgba(149, 160, 165, 0.494) 0px 8px 15px;
       margin: .5rem;
-      transition: .2s;
+      // transition: .2s;
       &:hover{
         transform: translateY(-10px);
         border: 2px solid #{$ssh-blue};

@@ -78,7 +78,6 @@ i {
   border-radius: 0.75rem;
   box-shadow: rgba(149, 160, 165, 0.494) 0px 8px 15px;
   margin: 0.5rem;
-  transition: 0.2s;
 }
 #section-wrap #section-gitblog .ssh--gitblog-wrap:hover {
   transform: translateY(-10px);
