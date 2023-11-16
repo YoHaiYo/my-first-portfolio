@@ -40,10 +40,6 @@ i {
   font-size: 0.85rem;
 }
 
-.inner-link {
-  height: 50px;
-}
-
 #hd {
   height: 4.3rem;
 }
@@ -75,9 +71,6 @@ i {
   background-color: #121244;
 }
 
-#section-wrap {
-  margin-top: 100px;
-}
 #section-wrap #section-about .ssh--about-main-wrap .ssh--about-wrap {
   margin-bottom: 1rem;
 }

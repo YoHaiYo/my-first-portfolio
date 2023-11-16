@@ -32,9 +32,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"
     integrity="sha512-5ZqpMmz0hz6IocEQqdQ3sns2rJ+8ODVbZflfapvz26ZaP3nZrEjnNrpOaEW97bQYIg0XbkjFdZUun701YjOr5Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- JS -->
-  <script defer src="./js/jquery-v2.2.4.js"></script>
-  <script defer src="./js/main.js"></script>
+  <script src="./js/jquery-v2.2.4.js"></script>
+  <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -46,11 +49,11 @@
     <nav class="navbar">
       <ul id="gnb" class="ssh--nav-menu d-flex mt-3">
         <li class="ssh--gnb-list"><a href="#">Home</a></li>
-        <li class="ssh--gnb-list"><a href="#link-about">About</a></li>
-        <li class="ssh--gnb-list"><a href="#link-gitblog">Github & Blog</a></li>
-        <li class="ssh--gnb-list"><a href="#link-techstacks">Tech Stacks</a></li>
-        <li class="ssh--gnb-list"><a href="#link-project">Project</a></li>
-        <li class="ssh--gnb-list"><a href="#link-contact">Contact</a></li>
+        <li class="ssh--gnb-list"><a href="#section-about" class="scrollactive">About</a></li>
+        <li class="ssh--gnb-list"><a href="#section-gitblog" class="scrollactive">Github & Blog</a></li>
+        <li class="ssh--gnb-list"><a href="#section-techstacks" class="scrollactive">Tech Stacks</a></li>
+        <li class="ssh--gnb-list"><a href="#section-project" class="scrollactive">Project</a></li>
+        <li class="ssh--gnb-list"><a href="#section-contact" class="scrollactive">Contact</a></li>
         <!-- <li class="ssh--gnb-list"><a href="#none">Comment</a></li> -->
       </ul>
       <div class="hamburger">
@@ -83,8 +86,7 @@
             <i class="bi bi-box-arrow-up-right"></i>
           </a>
         </div>
-      </button>
-      <div id="link-about" class="inner-link"></div>  
+      </button> 
     </section>
 
     <section id="section-about" class="border-bottom border-primary border-2 m-3">
@@ -118,14 +120,13 @@
           <span class="ssh--about-content">건설환경공학과</span>
         </div>
       </div>
-
-      <div id="link-gitblog" class="inner-link"></div>      
+    
     </section>
     <section id="section-gitblog" class="border-bottom border-primary border-2 m-3">
       <h2 class="text-center">Github & Blog</h2>
       <hr class="ssh--divider__main">
       <div class="ssh--gitblog-main-wrap justify-content-evenly m-3">
-        <div class="ssh--gitblog-wrap p-2 my-3">
+        <div class="ssh--gitblog-wrap p-2 my-3" >
           <a href="https://github.com/YoHaiYo" target="_blank">
             <div class="d-flex justify-content-center align-items-center">
               <img class="ssh--gitblog-img" src="./image/git-icon.png" alt="git-icon">
@@ -141,7 +142,8 @@
             </div>
           </a>
         </div>
-        <div class="ssh--gitblog-wrap p-2 my-3">
+        <div 
+        class="ssh--gitblog-wrap p-2 my-3">
           <a href="https://yohayo.tistory.com/" target="_blank">
             <div class="d-flex justify-content-center align-items-center">
               <img class="ssh--gitblog-img" src="./image/tistory-icon.png" alt="git-icon">
@@ -158,7 +160,6 @@
           </a>
         </div>
       </div>
-      <div id="link-techstacks" class="inner-link"></div>
     </section>
     <section id="section-techstacks" class="border-bottom border-primary border-2 m-3">
       <h2 class="text-center">Tech Stacks</h2>
@@ -279,7 +280,6 @@
         </li> <!-- /techstacks-wrap -->
       </ul>
 
-      <div id="link-project" class="inner-link"></div>
     </section>
 
     <section id="section-project" class="border-bottom border-primary border-2 m-3">
@@ -365,7 +365,6 @@
   
 
       </div>
-      <div id="link-contact" class="inner-link"></div>
     </section> <!-- section-project -->
     <section id="section-contact">
       <h2 class="text-center">Contact</h2>
