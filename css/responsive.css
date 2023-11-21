@@ -81,6 +81,12 @@
   .ssh--contact-wrap form[name=contact-info] {
     width: 70%;
   }
+  #gnb .nav-link {
+    border-bottom: 2px solid transparent !important;
+  }
+  #gnb .nav-link.active {
+    border-bottom: 2px solid #0ca2ff !important;
+  }
 }
 @media (min-width: 1024px) {
   #hd .logo-title::after {
@@ -110,5 +116,11 @@
   }
   .ssh--contact-wrap form[name=contact-info] {
     width: 50%;
+  }
+  #gnb .nav-link {
+    border-bottom: 2px solid transparent !important;
+  }
+  #gnb .nav-link.active {
+    border-bottom: 2px solid #0ca2ff !important;
   }
 }

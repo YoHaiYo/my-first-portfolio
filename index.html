@@ -7,17 +7,12 @@
   <title>SSH Front Portfolio Templet</title>
   <!-- CSS RESET -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
-  <!-- BOOTSTRAP -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- BOOTSTRAP CSS-->  
+  <link rel="stylesheet" href="./css/bootstrap.v5.3.2.css">
   <!-- ICON -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-  <!-- MAIN CSS -->
-  <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="stylesheet" href="./css/responsive.min.css">
-
+  <!-- Plug-In -->
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -35,6 +30,13 @@
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/responsive.min.css">
+  
   <!-- JS -->
   <script src="./js/jquery-v2.2.4.js"></script>
   <script defer src="./js/main.js"></script>
@@ -46,14 +48,14 @@
     class="container position-fixed top-0 start-0 end-0 mx-auto bg-white border-bottom border-primary border-2 z-1 d-flex justify-content-between align-items-center">
 
     <h1><a class="logo-title" href="#">SSH's </a></h1>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <ul id="gnb" class="ssh--nav-menu d-flex mt-3">
-        <li class="ssh--gnb-list"><a href="#">Home</a></li>
-        <li class="ssh--gnb-list"><a href="#section-about" class="scrollactive">About</a></li>
-        <li class="ssh--gnb-list"><a href="#section-gitblog" class="scrollactive">Github & Blog</a></li>
-        <li class="ssh--gnb-list"><a href="#section-techstacks" class="scrollactive">Tech Stacks</a></li>
-        <li class="ssh--gnb-list"><a href="#section-project" class="scrollactive">Project</a></li>
-        <li class="ssh--gnb-list"><a href="#section-contact" class="scrollactive">Contact</a></li>
+        <li class="ssh--gnb-list"><a href="#section-home" class="nav-link scrollactive">Home</a></li>
+        <li class="ssh--gnb-list"><a href="#section-about" class="nav-link scrollactive">About</a></li>
+        <li class="ssh--gnb-list"><a href="#section-gitblog" class="nav-link scrollactive">Github & Blog</a></li>
+        <li class="ssh--gnb-list"><a href="#section-techstacks" class="nav-link scrollactive">Tech Stacks</a></li>
+        <li class="ssh--gnb-list"><a href="#section-project" class="nav-link scrollactive">Project</a></li>
+        <li class="ssh--gnb-list"><a href="#section-contact" class="nav-link scrollactive">Contact</a></li>
         <!-- <li class="ssh--gnb-list"><a href="#none">Comment</a></li> -->
       </ul>
       <div class="hamburger">
@@ -63,7 +65,7 @@
       </div>
     </nav>
   </header>
-  <section id="section-wrap" class="container border-bottom border-primary border-2">
+  <section id="section-wrap" class="container border-bottom border-primary border-2" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40px" data-bs-smooth-scroll="true" >
     <section id="section-home" class="border-bottom border-primary border-2 text-center m-3">
       <p>
         프론트엔드 개발자 <br>

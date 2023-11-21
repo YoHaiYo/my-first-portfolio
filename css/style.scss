@@ -27,7 +27,6 @@ i{
 }
 
 
-
 // MAIN
 #hd {
   height: 4.3rem;
@@ -43,7 +42,7 @@ i{
       // white-space: nowrap;
       .ssh--gnb-list { 
         >a {      
-        padding-left: 1rem;
+        padding: .2rem .5rem;
         transition: .3s;
         font-weight: bold;
         color: #333;
@@ -70,7 +69,9 @@ i{
 }
 #section-wrap {
   // margin-top: 100px; // 고정된 헤더가 가리는 부분만큼
-  
+  section {    
+   height: 70vh; // `SSH : scrollspy 제대로 되려고 임시로 높이맞춤.
+  }
   #section-home{
   } //#section-home
   #section-about{  

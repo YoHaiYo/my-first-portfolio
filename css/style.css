@@ -49,7 +49,7 @@ i {
   color: #4a4a4a;
 }
 #hd .navbar #gnb .ssh--gnb-list > a {
-  padding-left: 1rem;
+  padding: 0.2rem 0.5rem;
   transition: 0.3s;
   font-weight: bold;
   color: #333;
@@ -71,6 +71,9 @@ i {
   background-color: #121244;
 }
 
+#section-wrap section {
+  height: 70vh;
+}
 #section-wrap #section-about .ssh--about-main-wrap .ssh--about-wrap {
   margin-bottom: 1rem;
 }

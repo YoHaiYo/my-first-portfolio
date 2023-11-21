@@ -99,6 +99,14 @@
       width: 70%;      
     }      
   }
+
+  
+#gnb .nav-link {
+  border-bottom: 2px solid transparent !important;
+}
+#gnb .nav-link.active {
+  border-bottom: 2px solid #{$ssh-blue} !important;
+}
 } // tablet
 
 @include desktop {
@@ -138,4 +146,11 @@
       width: 50%;      
     }      
   }
+  
+#gnb .nav-link {
+  border-bottom: 2px solid transparent !important;
+}
+#gnb .nav-link.active {
+  border-bottom: 2px solid #{$ssh-blue} !important;
+}
 } // desktop
