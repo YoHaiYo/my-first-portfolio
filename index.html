@@ -37,33 +37,33 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="stylesheet" href="./css/responsive.min.css">
   
-  <!-- JS -->
-  <script src="./js/jquery-v2.2.4.js"></script>
-  <script defer src="./js/main.js"></script>
 </head>
 
 <body>
   
   <header id="hd"
-    class="container position-fixed top-0 start-0 end-0 mx-auto bg-white border-bottom border-primary border-2 z-1 d-flex justify-content-between align-items-center">
+    class="fixed-top start-0 end-0 mx-auto border-bottom border-primary border-2 z-1 d-flex">
 
-    <h1><a class="logo-title" href="#">SSH's </a></h1>
-    <nav class="navbar" id="navbar">
-      <ul id="gnb" class="ssh--nav-menu d-flex mt-3">
-        <li class="ssh--gnb-list"><a href="#section-home" class="nav-link scrollactive">Home</a></li>
-        <li class="ssh--gnb-list"><a href="#section-about" class="nav-link scrollactive">About</a></li>
-        <li class="ssh--gnb-list"><a href="#section-gitblog" class="nav-link scrollactive">Github & Blog</a></li>
-        <li class="ssh--gnb-list"><a href="#section-techstacks" class="nav-link scrollactive">Tech Stacks</a></li>
-        <li class="ssh--gnb-list"><a href="#section-project" class="nav-link scrollactive">Project</a></li>
-        <li class="ssh--gnb-list"><a href="#section-contact" class="nav-link scrollactive">Contact</a></li>
-        <!-- <li class="ssh--gnb-list"><a href="#none">Comment</a></li> -->
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1><a class="logo-title" href="#">SSH's </a></h1>
+      <nav class="navbar" id="navbar">
+        <ul id="gnb" class="ssh--nav-menu d-flex mt-3">
+          <li class="ssh--gnb-list"><a href="#section-home" class="nav-link scrollactive">Home</a></li>
+          <li class="ssh--gnb-list"><a href="#section-about" class="nav-link scrollactive">About</a></li>
+          <li class="ssh--gnb-list"><a href="#section-gitblog" class="nav-link scrollactive">Github & Blog</a></li>
+          <li class="ssh--gnb-list"><a href="#section-techstacks" class="nav-link scrollactive">Tech Stacks</a></li>
+          <li class="ssh--gnb-list"><a href="#section-project" class="nav-link scrollactive">Project</a></li>
+          <li class="ssh--gnb-list"><a href="#section-contact" class="nav-link scrollactive">Contact</a></li>
+          <!-- <li class="ssh--gnb-list"><a href="#none">Comment</a></li> -->
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+
   </header>
   <section id="section-wrap" class="container border-bottom border-primary border-2" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40px" data-bs-smooth-scroll="true" >
     <section id="section-home" class="border-bottom border-primary border-2 text-center m-3">
@@ -432,6 +432,11 @@
   </footer>
 
   <div id="to-top">↑</div>
+
+  <!-- JS -->
+  <script src="./js/jquery-v2.2.4.js"></script>
+  <script src="./js/headerBgChange.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

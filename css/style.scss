@@ -25,11 +25,16 @@ a:hover {color: black; text-decoration: none;}
 i{
   font-size: .85rem;
 }
-
+#hd.bg-change {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.6)!important;
+}
 
 // MAIN
 #hd {
   height: 4.3rem;
+  background-color: rgb(213, 243, 255, 0.5) !important;
   h1{
     a{
       font-size: 2rem;
