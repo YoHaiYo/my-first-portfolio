@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SSH Front Portfolio Templet</title>
+   <!-- SEO -->
+  <!-- 기본설명-->
+  <meta name="author" content="SimSeHoon|YoHaiYo" />
+  <meta name="description" content="On web development, interface design, JS studyng, and all the rest" />
+  <!-- 로봇 -->
+  <meta name="robots" content="index,follow"/>
+  <!-- 공유시 보여줄정보 -->
+  <meta property="og:site_name" content="SSH FrontEnd Portfolio" />
+  <meta property="og:url" content="https://sshwebportfolio.netlify.app/"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SSH FrontEnd Portfolio" />
+  <meta property="og:description" content="SimSeHoon | On web development, interface design, JS studyng, and all the rest" />
+  <meta property="og:image" content="./image/yohayo_logo.png" />
+  <!-- 트위터공유시 보여줄정보 -->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="SSH FrontEnd Portfolio"/>
+  <meta name="twitter:url" content="https://sshwebportfolio.netlify.app/"/>
+  <meta name="twitter:description" content="SimSeHoon | On web development, interface design, JS studyng, and all the rest"/>
+  <!-- 모바일 바로가기 이미지 -->
+  <link rel="shortcut icon" type="image/x-icon" href="./image/yohayo_logo.png" />
+  <link rel="apple-touch-icon" href="./image/yohayo_logo.png" />
+  <link rel="apple-touch-icon-precomposed" href="./image/yohayo_logo.png">
+  <title>SSH FrontEnd Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="image/yohayo_favicon_squre.ico" />
   <!-- CSS RESET -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
   <!-- BOOTSTRAP CSS-->  
@@ -36,6 +59,7 @@
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="stylesheet" href="./css/responsive.min.css">
+
   
 </head>
 
@@ -67,35 +91,37 @@
   </header>
   <section id="section-wrap" class="container border-bottom border-primary border-2" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40px" data-bs-smooth-scroll="true" >
     <section id="section-home" class="border-bottom border-primary border-2 text-center m-3 ">
-      <p>
-        프론트엔드 개발자 <br>
-        심세훈
-      </p>
-      <hr class="ssh--divider__sub">
-      <p>
-        토목구조설계자 이후 제 2의 꿈인<br>
-        프론트엔드 개발자를 목표로 하고 있습니다.<br>
-        철저한 자료관리, 디자인감각, 집요하게 코드를 파보는것이 강점입니다.   
-      </p>
-      <hr class="ssh--divider__sub">
-      <p>
-        이런 저의 강점은 온라인강의 우수 수료생 인터뷰에서도 드러납니다.
-      </p>
-      <button type="button" class="btn btn-primary ">
-        <div class="d-flex">
-          <a href="https://blog.naver.com/fastcampus/223202538666" target="_blank">
-            바로가기
-            <i class="bi bi-box-arrow-up-right"></i>
-          </a>
-        </div>
-      </button> 
+      <div class="home-wrap">
+        <p>
+          프론트엔드 개발자 <br>
+          심세훈
+        </p>
+        <hr class="ssh--divider__sub">
+        <p>
+          토목구조설계자 이후 제 2의 꿈인<br>
+          프론트엔드 개발자를 목표로 하고 있습니다.<br>
+          철저한 자료관리, 디자인감각, 집요하게 코드를 파보는것이 강점입니다.
+        </p>
+        <hr class="ssh--divider__sub">
+        <p>
+          이런 저의 강점은 온라인강의 우수 수료생 인터뷰에서도 드러납니다.
+        </p>
+        <button type="button" class="btn btn-primary ">
+          <div class="d-flex">
+            <a href="https://blog.naver.com/fastcampus/223202538666" target="_blank" class="text-white">
+              바로가기
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+        </button>
+      </div> 
     </section>
 
     <section id="section-about" class="border-bottom border-primary border-2 m-3">
       <h2 class="text-center">About</h2>
       <hr class="ssh--divider__main">
       <!-- <div class="position-absolute start-50 translate-middle-x"> -->
-      <div class="ssh--about-main-wrap start-0 end-0 mx-auto">
+      <div class="ssh--about-main-wrap">
         <div class="ssh--about-wrap">
           <i class="bi bi-person-circle"></i>
           <span class="ssh--about-name">이름 : </span>
@@ -127,7 +153,7 @@
     <section id="section-gitblog" class="border-bottom border-primary border-2 m-3">
       <h2 class="text-center">Github & Blog</h2>
       <hr class="ssh--divider__main">
-      <div class="ssh--gitblog-main-wrap justify-content-evenly m-3">
+      <div class="ssh--gitblog-main-wrap justify-content-evenly">
         <div class="ssh--gitblog-wrap p-2 my-3" 
         data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-offset="500"
         data-aos-delay="50" data-aos-duration="700"
@@ -154,7 +180,7 @@
           <a href="https://yohayo.tistory.com/" target="_blank">
             <div class="d-flex justify-content-center align-items-center">
               <img class="ssh--gitblog-img" src="./image/tistory-icon.png" alt="git-icon">
-              <span class="gitblog-title mx-3">Tistory</span>
+              <span class="gitblog-title">Tistory</span>
               <i class="bi bi-box-arrow-up-right"></i>
             </div>
             <div>
