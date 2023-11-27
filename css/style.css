@@ -83,7 +83,6 @@ i {
   font-family: "SOYOMapleBoldTTF", "Spoqa Han Sans", "Noto Sans KR", sans-serif;
 }
 #section-wrap section {
-  height: 95vh;
   margin: 0;
   padding: 0;
 }
@@ -91,9 +90,10 @@ i {
   margin: 3rem 0;
 }
 #section-wrap #section-home {
-  font-size: 3rem;
+  font-size: 2.5rem;
   background-image: url("../image/interactive-bg-1.jpg");
   background-size: cover;
+  height: 95vh;
   filter: brightness(110%);
 }
 #section-wrap #section-home .home-wrap {

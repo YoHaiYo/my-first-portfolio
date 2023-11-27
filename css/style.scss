@@ -104,7 +104,7 @@ i {
 
   // margin-top: 100px; // 고정된 헤더가 가리는 부분만큼
   section {
-    height: 95vh; // `SSH : scrollspy 제대로 되려고 임시로 높이맞춤.
+    // height: 95vh; // `SSH : scrollspy 제대로 되려고 임시로 높이맞춤.
     margin: 0;
     padding: 0;
     h2 {
@@ -113,9 +113,10 @@ i {
   }
 
   #section-home {
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-image: url('../image/interactive-bg-1.jpg');
     background-size: cover;
+    height: 95vh;
     filter: brightness(110%);
 
     
